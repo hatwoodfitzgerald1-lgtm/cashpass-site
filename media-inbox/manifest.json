@@ -134,6 +134,41 @@
    "slot": "photo-about-01-alt",
    "url": "https://images.pexels.com/photos/9224678/pexels-photo-9224678.jpeg",
    "file": "photo-about-01-alt.jpg"
+  },
+  {
+   "slot": "vid-001d-key",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_ffaa2870-74da-4749-9469-e602e9d72253.png",
+   "file": "vid-001d-key-v2.png"
+  },
+  {
+   "slot": "photo-blog-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_bd54b311-77fd-4968-9cc8-750742ce6366.png",
+   "file": "photo-blog-01-v3.png"
+  },
+  {
+   "slot": "photo-hiw-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_10873e52-85c2-4f53-b7e1-9619183c2e8b.png",
+   "file": "photo-hiw-01-v2.png"
+  },
+  {
+   "slot": "hero-post-rotating",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_cedb9f91-55c0-4249-a630-7e80fa0134e5.png",
+   "file": "hero-post-rotating-v2.png"
+  },
+  {
+   "slot": "hero-post-fees",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_7129a66c-64d6-4bbc-96ad-f0e9c334fc97.png",
+   "file": "hero-post-fees-v2.png"
+  },
+  {
+   "slot": "hero-post-coding",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_e7eadd45-5c08-4152-8c41-23a0c0a58bff.png",
+   "file": "hero-post-coding-v2.png"
+  },
+  {
+   "slot": "atmos-04",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_210135_2c6b7aa2-2da1-48f2-9aaf-cfc84b4fc17f.png",
+   "file": "atmos-04-v2.png"
   }
  ]
 }
