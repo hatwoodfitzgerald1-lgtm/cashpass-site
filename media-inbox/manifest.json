@@ -1,0 +1,8 @@
+{"items": [
+ {"slot": "bridge-test", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_201006_e0528d2c-2f6c-48fa-ba09-4c63c12b8356_min.webp", "file": "bridge-test.webp"},
+ {"slot": "3d-hdri-small-empty-room-2", "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/small_empty_room_2_1k.hdr", "file": "small_empty_room_2_1k.hdr"},
+ {"slot": "3d-hdri-small-empty-room-2-2k", "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/small_empty_room_2_2k.hdr", "file": "small_empty_room_2_2k.hdr"},
+ {"slot": "3d-tex-leather-red-03-nor", "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_nor_gl_1k.jpg", "file": "leather_red_03_nor_gl_1k.jpg"},
+ {"slot": "3d-tex-leather-red-03-rough", "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_rough_1k.jpg", "file": "leather_red_03_rough_1k.jpg"},
+ {"slot": "3d-tex-leather-red-03-diff", "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_diff_1k.jpg", "file": "leather_red_03_diff_1k.jpg"}
+]}
