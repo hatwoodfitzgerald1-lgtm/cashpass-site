@@ -1,8 +1,139 @@
-{"items": [
- {"slot": "bridge-test", "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_201006_e0528d2c-2f6c-48fa-ba09-4c63c12b8356_min.webp", "file": "bridge-test.webp"},
- {"slot": "3d-hdri-small-empty-room-2", "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/small_empty_room_2_1k.hdr", "file": "small_empty_room_2_1k.hdr"},
- {"slot": "3d-hdri-small-empty-room-2-2k", "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/small_empty_room_2_2k.hdr", "file": "small_empty_room_2_2k.hdr"},
- {"slot": "3d-tex-leather-red-03-nor", "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_nor_gl_1k.jpg", "file": "leather_red_03_nor_gl_1k.jpg"},
- {"slot": "3d-tex-leather-red-03-rough", "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_rough_1k.jpg", "file": "leather_red_03_rough_1k.jpg"},
- {"slot": "3d-tex-leather-red-03-diff", "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_diff_1k.jpg", "file": "leather_red_03_diff_1k.jpg"}
-]}
+{
+ "items": [
+  {
+   "slot": "3d-hdri-small-empty-room-2",
+   "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/small_empty_room_2_1k.hdr",
+   "file": "small_empty_room_2_1k.hdr"
+  },
+  {
+   "slot": "3d-hdri-small-empty-room-2-2k",
+   "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/small_empty_room_2_2k.hdr",
+   "file": "small_empty_room_2_2k.hdr"
+  },
+  {
+   "slot": "3d-tex-leather-red-03-nor",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_nor_gl_1k.jpg",
+   "file": "leather_red_03_nor_gl_1k.jpg"
+  },
+  {
+   "slot": "3d-tex-leather-red-03-rough",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_rough_1k.jpg",
+   "file": "leather_red_03_rough_1k.jpg"
+  },
+  {
+   "slot": "3d-tex-leather-red-03-coll1",
+   "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leather_red_03/leather_red_03_coll1_1k.jpg",
+   "file": "leather_red_03_coll1_1k.jpg"
+  },
+  {
+   "slot": "photo-home-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_b3ac37dd-042c-4282-bc7c-49eaadcdc29e.png",
+   "file": "photo-home-01.png"
+  },
+  {
+   "slot": "photo-home-02",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_34b7489b-f75e-40b6-9c69-3826021fed80.png",
+   "file": "photo-home-02.png"
+  },
+  {
+   "slot": "photo-plans-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_4dd8d17d-db8f-4ee5-bb45-79df8dbe18da.png",
+   "file": "photo-plans-01.png"
+  },
+  {
+   "slot": "photo-hiw-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_ae83f7cd-4a97-4393-8484-ab35dbd810c2.png",
+   "file": "photo-hiw-01.png"
+  },
+  {
+   "slot": "photo-quiz-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_209d5e71-1f8a-458a-9346-8576141b6531.png",
+   "file": "photo-quiz-01.png"
+  },
+  {
+   "slot": "photo-post-rotating",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_5c5064e8-6c02-4c79-af3e-fd6e6640b1fb.png",
+   "file": "photo-post-rotating.png"
+  },
+  {
+   "slot": "photo-post-fees",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_c9f426af-52b2-4bc6-a9bd-d53aca1c1b7f.png",
+   "file": "photo-post-fees.png"
+  },
+  {
+   "slot": "photo-post-coding",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_ecfcb4c9-6607-4e34-9203-f71e0b3633ad.png",
+   "file": "photo-post-coding.png"
+  },
+  {
+   "slot": "vid-001d-key",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_203935_a507432e-26ce-4f5c-9f38-5e2ccd6b2376.png",
+   "file": "vid-001d-key.png"
+  },
+  {
+   "slot": "hero-post-rotating",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_b49112f1-6192-4bf6-81a0-3fb71ac77991.png",
+   "file": "hero-post-rotating.png"
+  },
+  {
+   "slot": "hero-post-fees",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_91e40275-fe86-4842-9a1b-34b9a27133a7.png",
+   "file": "hero-post-fees.png"
+  },
+  {
+   "slot": "hero-post-coding",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_2c6bd2d1-c11a-40c5-ab5b-651509da9578.png",
+   "file": "hero-post-coding.png"
+  },
+  {
+   "slot": "atmos-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_4b184ffa-8505-46c4-aa19-f67240e72a34.png",
+   "file": "atmos-01.png"
+  },
+  {
+   "slot": "atmos-02",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_473c6124-2a71-4616-a3ee-c1870a8de556.png",
+   "file": "atmos-02.png"
+  },
+  {
+   "slot": "atmos-03",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_e03645be-1d9b-41b3-995b-5056601d2eec.png",
+   "file": "atmos-03.png"
+  },
+  {
+   "slot": "atmos-04",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_46945873-fb91-4a43-91b7-3c81eb3a45cf.png",
+   "file": "atmos-04.png"
+  },
+  {
+   "slot": "atmos-05",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204032_571d0bb5-9b51-44bc-abd9-179992052f07.png",
+   "file": "atmos-05.png"
+  },
+  {
+   "slot": "photo-blog-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204428_f3c580d1-779a-4f05-9594-df73746ab906.png",
+   "file": "photo-blog-01.png"
+  },
+  {
+   "slot": "photo-contact-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204428_ce6416ca-4dba-40c0-ae05-d5e7551366b6.png",
+   "file": "photo-contact-01.png"
+  },
+  {
+   "slot": "photo-app-01",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_39vLcqQmH8rxFFCbniS23PhTQMs/hf_20260924_204822_523f53c3-f769-46c8-8c12-fbf164d0f291.png",
+   "file": "photo-app-01.png"
+  },
+  {
+   "slot": "photo-about-01",
+   "url": "https://images.unsplash.com/photo-1775831990999-243461967def?q=92&w=4000&fm=jpg",
+   "file": "photo-about-01.jpg"
+  },
+  {
+   "slot": "photo-about-01-alt",
+   "url": "https://images.pexels.com/photos/9224678/pexels-photo-9224678.jpeg",
+   "file": "photo-about-01-alt.jpg"
+  }
+ ]
+}
