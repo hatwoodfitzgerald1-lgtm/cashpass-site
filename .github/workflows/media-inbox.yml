@@ -1,0 +1,49 @@
+name: media-inbox
+# Bridge for generated media: downloads every URL listed in media-inbox/manifest.json
+# into media-inbox/ and commits the files, so the build sandbox can pull them from raw.githubusercontent.com.
+on:
+  push:
+    paths:
+      - 'media-inbox/manifest.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: media-inbox
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download every URL in the manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd media-inbox
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+          m = json.load(open('manifest.json'))
+          items = m['items'] if isinstance(m, dict) else m
+          failed = []
+          for it in items:
+              out = it['file']
+              if os.path.exists(out) and os.path.getsize(out) > 0:
+                  print('exists', out); continue
+              print('fetch', out, '<-', it['url'][:120])
+              r = subprocess.run(['curl', '-fsSL', '--retry', '4', '--retry-delay', '3', '-A', 'Mozilla/5.0', '-o', out, it['url']])
+              if r.returncode != 0 or not os.path.exists(out) or os.path.getsize(out) == 0:
+                  failed.append(out)
+                  if os.path.exists(out): os.remove(out)
+          json.dump({'failed': failed}, open('_result.json', 'w'))
+          print('failed:', failed)
+          PY
+          ls -la
+      - name: Commit the files
+        shell: bash
+        run: |
+          git config user.name "media-inbox bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A media-inbox
+          git commit -m "media-inbox: fetched files listed in manifest.json" || echo "nothing to commit"
+          git push
