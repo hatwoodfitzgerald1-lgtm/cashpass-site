@@ -1,0 +1,36 @@
+name: unpack-bundle
+# Unpacks the site bundle uploaded to _bundle/ into the repository root, then removes the bundle and the media inbox.
+on:
+  push:
+    paths:
+      - '_bundle/READY'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: unpack-bundle
+  cancel-in-progress: false
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble and unpack
+        shell: bash
+        run: |
+          set -euo pipefail
+          ls -la _bundle
+          cat _bundle/site.tar.gz.part* > /tmp/site.tar.gz
+          echo "expected $(cat _bundle/SHA256 | cut -c1-16)  got $(sha256sum /tmp/site.tar.gz | cut -c1-16)"
+          test "$(sha256sum /tmp/site.tar.gz | cut -c1-64)" = "$(cat _bundle/SHA256 | cut -c1-64)"
+          tar -xzf /tmp/site.tar.gz -C .
+          rm -rf _bundle media-inbox
+          ls -la
+      - name: Commit the unpacked site
+        shell: bash
+        run: |
+          git config user.name "bundle bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Cash Pass site: unpack the build bundle (Astro SSR for Webflow Cloud), remove the bundle and media inbox" || echo "nothing to commit"
+          git push
