@@ -1,0 +1,202 @@
+{
+ "frames": 120,
+ "fps_scrub": "scroll driven; frame = round(p times 119) + 1",
+ "width_height": {
+  "2560": [
+   2560,
+   1440
+  ],
+  "1920": [
+   1920,
+   1080
+  ],
+  "1440": [
+   1440,
+   810
+  ]
+ },
+ "ladders": [
+  2560,
+  1920,
+  1440
+ ],
+ "path_pattern": "seq/{ladder}/f{NNN}.webp",
+ "rest": [
+  20,
+  44,
+  68,
+  92,
+  116
+ ],
+ "rest_paths": [
+  "seq/rest/960/r1.webp",
+  "seq/rest/960/r2.webp",
+  "seq/rest/960/r3.webp",
+  "seq/rest/960/r4.webp",
+  "seq/rest/960/r5.webp"
+ ],
+ "poster": "seq/poster.webp",
+ "posters": {
+  "1920": "seq/poster.webp",
+  "1440": "seq/poster-1440.webp",
+  "960": "seq/poster-960.webp",
+  "reduced_motion": "seq/poster-reduced-motion.webp"
+ },
+ "chapters": [
+  {
+   "n": 1,
+   "shop": "Lantern Row Market",
+   "when": "July",
+   "frames": [
+    1,
+    24
+   ],
+   "walk": [
+    1,
+    16
+   ],
+   "rest": [
+    17,
+    24
+   ],
+   "lit": "Grocery 6%",
+   "rest_frame": 20,
+   "snap_p": 0.17,
+   "screen": "S1"
+  },
+  {
+   "n": 2,
+   "shop": "Route 9 Fuel",
+   "frames": [
+    25,
+    48
+   ],
+   "walk": [
+    25,
+    40
+   ],
+   "rest": [
+    41,
+    48
+   ],
+   "lit": "Everyday 4%",
+   "rest_frame": 44,
+   "snap_p": 0.37,
+   "screen": "S1 template"
+  },
+  {
+   "n": 3,
+   "shop": "Online marketplace",
+   "frames": [
+    49,
+    72
+   ],
+   "walk": [
+    49,
+    64
+   ],
+   "rest": [
+    65,
+    72
+   ],
+   "lit": "Marketplace 5%",
+   "rest_frame": 68,
+   "snap_p": 0.57,
+   "screen": "S1 template"
+  },
+  {
+   "n": 4,
+   "shop": "Somewhere else",
+   "frames": [
+    73,
+    96
+   ],
+   "walk": [
+    73,
+    88
+   ],
+   "rest": [
+    89,
+    96
+   ],
+   "lit": "Flat 2%",
+   "rest_frame": 92,
+   "snap_p": 0.77,
+   "screen": "S1 template"
+  },
+  {
+   "n": 5,
+   "shop": "Lantern Row Cafe",
+   "when": "November 3",
+   "frames": [
+    97,
+    120
+   ],
+   "walk": [
+    97,
+    112
+   ],
+   "rest": [
+    113,
+    120
+   ],
+   "lit": "Everyday 4%",
+   "feint": "Grocery 6% on frames 97 to 100, then Grocery 6% goes dark",
+   "rest_frame": 116,
+   "snap_p": 0.97,
+   "screen": "S7",
+   "note": "The Last Light; frame 116 is the reduced motion poster"
+  }
+ ],
+ "chapter_boundaries_p": [
+  0.2,
+  0.4,
+  0.6,
+  0.8
+ ],
+ "snap_points_p": [
+  0.17,
+  0.37,
+  0.57,
+  0.77,
+  0.97
+ ],
+ "idle_drift_frames": [
+  17,
+  24
+ ],
+ "grade": "oxblood-one-cool-light at full strength, baked",
+ "source": "media-src/render/scene.html (Three.js r128, headless Chromium, SwiftShader), frozen copy media-src/seq/scene_frozen.html",
+ "set_bytes": {
+  "poster.webp": 21046,
+  "poster-1440.webp": 13170,
+  "poster-960.webp": 6976,
+  "poster-reduced-motion.webp": 23860,
+  "2560": {
+   "bytes": 3072852,
+   "mb": 3.07,
+   "budget_mb": 10.2,
+   "under_budget": true,
+   "max_frame_bytes": 29606,
+   "cap_bytes": 87040
+  },
+  "1920": {
+   "bytes": 2040496,
+   "mb": 2.04,
+   "budget_mb": 6.6,
+   "under_budget": true,
+   "max_frame_bytes": 19630,
+   "cap_bytes": 56320
+  },
+  "1440": {
+   "bytes": 1290132,
+   "mb": 1.29,
+   "budget_mb": 4.3,
+   "under_budget": true,
+   "max_frame_bytes": 12264,
+   "cap_bytes": 36864
+  },
+  "rest960": 29428
+ },
+ "alt": "Five plain card tiles stand on black glass on a dark red leather counter. A phone propped in front of them is the only light, and its cool glow rests on the card to tap while a small sign names the shop."
+}

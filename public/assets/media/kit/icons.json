@@ -1,0 +1,77 @@
+{
+ "grid": 20,
+ "stroke": 1.75,
+ "corner_rx": 3,
+ "caps": "round",
+ "joins": "round",
+ "color_default": "CDB3AE",
+ "color_lit": "E9F1F8",
+ "usage": "inline the sprite once per page, then <svg class=\"ic\"><use href=\"#icon-card\"/></svg>; add class is-lit (or set color) for the recommended one",
+ "icons": [
+  {
+   "id": "icon-card",
+   "name": "card",
+   "meaning": "a card: the tile with its digits bar"
+  },
+  {
+   "id": "icon-phone",
+   "name": "phone",
+   "meaning": "a phone with a notification pip"
+  },
+  {
+   "id": "icon-reader",
+   "name": "reader",
+   "meaning": "a card reader: three concentric arcs"
+  },
+  {
+   "id": "icon-rule",
+   "name": "rule",
+   "meaning": "a rule: a card with an arrow to a small awning"
+  },
+  {
+   "id": "icon-quarter",
+   "name": "quarter",
+   "meaning": "a quarter: a square split in four with one quadrant filled"
+  },
+  {
+   "id": "icon-cap",
+   "name": "cap",
+   "meaning": "a cap: a bar two thirds filled"
+  },
+  {
+   "id": "icon-ledger",
+   "name": "ledger",
+   "meaning": "a ledger: three stacked bars with a longer total"
+  },
+  {
+   "id": "icon-token",
+   "name": "token",
+   "meaning": "a token: a small key shaped tile with a notch"
+  },
+  {
+   "id": "icon-household",
+   "name": "household",
+   "meaning": "a household: five dots on an arc"
+  },
+  {
+   "id": "icon-wallet-link",
+   "name": "wallet-link",
+   "meaning": "a wallet link: two tiles joined by a short bar"
+  },
+  {
+   "id": "icon-tick",
+   "name": "tick",
+   "meaning": "a tick inside the card"
+  },
+  {
+   "id": "icon-cart",
+   "name": "cart",
+   "meaning": "the cart: a card outline with a count badge"
+  },
+  {
+   "id": "icon-light",
+   "name": "light",
+   "meaning": "the light: a small pool under a dot"
+  }
+ ]
+}

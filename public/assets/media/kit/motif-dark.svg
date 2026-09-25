@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 56" width="64" height="56" role="img" aria-label="Cash Pass mark: a lit card standing on glass">
+<defs>
+<radialGradient id="pool-m" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#2E0B0C" stop-opacity="0.2"/><stop offset="1" stop-color="#2E0B0C" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade-m" x1="0" y1="41" x2="0" y2="51" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="mask-m" maskUnits="userSpaceOnUse" x="0" y="40" width="64" height="16"><rect x="0" y="40" width="64" height="16" fill="url(#fade-m)"/></mask>
+</defs>
+<ellipse id="pool" cx="32" cy="40" rx="28" ry="7" fill="url(#pool-m)"/>
+<g id="reflection" mask="url(#mask-m)"><g transform="matrix(1 0 0 -1 0 80)"><rect x="12" y="14" width="40" height="25" rx="3" fill="#2E0B0C"/><rect x="17" y="33" width="9" height="2" fill="#E9F1F8"/></g></g>
+<g id="card"><rect id="card-face" x="12" y="14" width="40" height="25" rx="3" fill="#2E0B0C"/><rect id="digits" x="17" y="33" width="9" height="2" fill="#E9F1F8"/></g>
+</svg>

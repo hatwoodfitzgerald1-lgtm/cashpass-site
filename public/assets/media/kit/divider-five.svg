@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" width="1440" height="80" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="df" x1="0" y1="52" x2="0" y2="64" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="dm" maskUnits="userSpaceOnUse" x="0" y="52" width="1440" height="14"><rect x="0" y="52" width="1440" height="14" fill="url(#df)"/></mask>
+</defs>
+<style>.card{fill:#5E1F22} .lit{fill:#E9F1F8} .bar{fill:#CDB3AE;opacity:.9} .lit .bar{fill:#2E0B0C;opacity:1}</style>
+<rect x="120" y="51.5" width="1200" height="1" fill="#E9F1F8" opacity="0.18"/>
+<g id="reflections" mask="url(#dm)"><rect x="640" y="52" width="24" height="15" rx="2" class="card lit"/><rect x="674" y="52" width="24" height="15" rx="2" class="card"/><rect x="708" y="52" width="24" height="15" rx="2" class="card"/><rect x="742" y="52" width="24" height="15" rx="2" class="card"/><rect x="776" y="52" width="24" height="15" rx="2" class="card"/></g>
+<g id="cards"><g id="c1" class="card lit"><rect x="640" y="36" width="24" height="15" rx="2"/><rect class="bar" x="643" y="47" width="6" height="1.5"/></g><g id="c2" class="card"><rect x="674" y="36" width="24" height="15" rx="2"/><rect class="bar" x="677" y="47" width="6" height="1.5"/></g><g id="c3" class="card"><rect x="708" y="36" width="24" height="15" rx="2"/><rect class="bar" x="711" y="47" width="6" height="1.5"/></g><g id="c4" class="card"><rect x="742" y="36" width="24" height="15" rx="2"/><rect class="bar" x="745" y="47" width="6" height="1.5"/></g><g id="c5" class="card"><rect x="776" y="36" width="24" height="15" rx="2"/><rect class="bar" x="779" y="47" width="6" height="1.5"/></g></g>
+</svg>

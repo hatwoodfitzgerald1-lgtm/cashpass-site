@@ -1,0 +1,28 @@
+---
+export const prerender = false;
+// Every built page is bundled as a raw string at build time from src/site/<route>/index.html.
+const files = import.meta.glob('../site/**/index.html', { query: '?raw', import: 'default', eager: true });
+const map = {};
+for (const p in files) {
+  let r = p.replace('../site', '').replace(/index\.html$/, '');
+  if (r === '') r = '/';
+  map[r] = files[p];
+}
+// The two legal aliases serve the same HTML as their canonical routes (the canonical link inside the HTML points at the long route).
+const aliases = { '/terms/': '/terms-of-service/', '/privacy/': '/privacy-policy/' };
+let path = new URL(Astro.request.url).pathname;
+try { path = decodeURIComponent(path); } catch (e) { /* keep the raw path */ }
+if (!path.endsWith('/')) path += '/';
+if (aliases[path]) path = aliases[path];
+const found = path !== '/404/' && Object.prototype.hasOwnProperty.call(map, path);
+const html = found ? map[path] : map['/404/'];
+const status = found ? 200 : 404;
+return new Response(html, {
+  status,
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'cache-control': found ? 'public, max-age=0, must-revalidate' : 'no-store',
+    'x-content-type-options': 'nosniff'
+  }
+});
+---

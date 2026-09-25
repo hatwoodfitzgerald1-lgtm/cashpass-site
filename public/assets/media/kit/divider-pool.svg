@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" width="1440" height="120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+<defs>
+<radialGradient id="dp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9F1F8" stop-opacity="1"/><stop offset="1" stop-color="#E9F1F8" stop-opacity="0"/></radialGradient>
+</defs>
+<g id="pool" opacity="0.12"><ellipse cx="720" cy="60" rx="520" ry="42" fill="url(#dp)"/></g>
+<rect id="glass-line" x="200" y="60" width="1040" height="1" fill="#E9F1F8" opacity="0.12"/>
+</svg>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cash Pass Blog</title>
+<meta name="description" content="Short pieces on caps, quarters, fees and the way shops code, written so you know the answer before you tap.">
+<link rel="canonical" href="https://yourcashpass.com/blog">
+<meta property="og:site_name" content="Cash Pass">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cash Pass Blog">
+<meta property="og:description" content="Short pieces on caps, quarters, fees and the way shops code, written so you know the answer before you tap.">
+<meta property="og:url" content="https://yourcashpass.com/blog">
+<meta property="og:image" content="https://yourcashpass.com/assets/media/og-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cash Pass: which card to tap, told to you at the till, in one line. A phone's cool light on black glass over dark red leather.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cash Pass Blog">
+<meta name="twitter:description" content="Short pieces on caps, quarters, fees and the way shops code, written so you know the answer before you tap.">
+<meta name="twitter:image" content="https://yourcashpass.com/assets/media/og-share.png">
+<meta name="theme-color" content="#2E0B0C">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/familjen-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<script>(function(){var h=document.documentElement;h.className+=' js';var q=location.search;var rm=/[?&]qa=rm(&|$)/.test(q)||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);if(rm)h.className+=' rm';var coarse=window.matchMedia&&matchMedia('(pointer: coarse)').matches;if(coarse||innerWidth<900)h.className+=' touch';if(/[?&]qa=arc(&|$)/.test(q))h.className+=' qa-arc';try{var c=JSON.parse(localStorage.getItem('cashpass.cart'));if(c&&c.plan)h.className+=' has-cart';}catch(e){}})();</script>
+<style>/* Cash Pass self hosted fonts (Google Fonts is not used; these files come from the @fontsource packages, OFL licensed). */
+@font-face { font-family: 'Familjen Grotesk'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/assets/fonts/familjen-grotesk-latin-wght-normal.woff2') format('woff2-variations'), url('/assets/fonts/familjen-grotesk-latin-wght-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Familjen Grotesk'; font-style: italic; font-weight: 400 700; font-display: swap; src: url('/assets/fonts/familjen-grotesk-latin-wght-italic.woff2') format('woff2-variations'), url('/assets/fonts/familjen-grotesk-latin-wght-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: normal; font-weight: 400; font-display: swap; src: url('/assets/fonts/instrument-serif-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; font-display: swap; src: url('/assets/fonts/instrument-serif-latin-400-italic.woff2') format('woff2'); }
+</style>
+<style>:root{--field:#2E0B0C;--s1:#3E1113;--s2:#4E181A;--s3:#5E1F22;--text:#F5EDE8;--text2:#CDB3AE;--light:#E9F1F8;--light2:#C6D6E3;--gutter:clamp(16px,3.5vw,88px);--gap:clamp(16px,1.6vw,40px);--walk:cubic-bezier(0.46,0.03,0.24,1);--rest:cubic-bezier(0.05,0.7,0.3,1);--fast:.18s;--base:.42s;--slow:1.1s;--h1:clamp(2.75rem,1rem + 5vw,8.25rem);--answer:clamp(2.5rem,1rem + 5.5vw,8.75rem);--h2:clamp(2rem,.8rem + 3vw,4.75rem);--h3:clamp(1.375rem,.9rem + 1.2vw,2.25rem);--body:clamp(1.0625rem,1rem + .2vw,1.25rem);--small:clamp(.8125rem,.75rem + .15vw,.9375rem);--hdr:72px;--sans:'Familjen Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;--serif:'Instrument Serif',Georgia,serif}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--field);color:var(--text);font-family:var(--sans);-webkit-text-size-adjust:100%}
+body{margin:0;font-size:var(--body);line-height:1.5;overflow-x:hidden;min-height:100vh;background:var(--field)}
+img,video,svg,canvas{display:block;max-width:100%}
+[hidden]{display:none!important}
+img{height:auto}
+a{color:inherit}
+.vh,.skip{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.skip:focus{position:fixed!important;left:var(--gutter);top:12px;width:auto;height:auto;clip:auto;clip-path:none;padding:12px 16px;background:var(--light);color:var(--field);border-radius:12px;z-index:200;font-weight:600;outline:2px solid var(--field);outline-offset:2px}
+.hdr{position:fixed;inset:0 0 auto 0;height:var(--hdr);z-index:100;background:rgba(62,17,19,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:height var(--base) var(--rest)}
+.hdr-in{height:100%;padding:0 var(--gutter);display:flex;align-items:center;gap:var(--gap)}
+.brand{display:inline-flex;align-items:center;text-decoration:none;color:var(--text)}
+.lockup{display:inline-flex;align-items:center;gap:10px;height:28px}
+.lockup-svg{height:28px;width:auto}
+.lockup-word{font-weight:700;letter-spacing:-.015em;font-size:1.25rem;line-height:1}
+.hdr-nav{margin-left:auto}
+.hdr-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:clamp(14px,1.6vw,36px)}
+.hdr-nav a{text-decoration:none;color:var(--text2);opacity:.6;font-weight:500;font-size:var(--small);transition:opacity var(--fast) var(--rest),color var(--fast) var(--rest)}
+.hdr-nav a[aria-current=page]{color:var(--text);opacity:1}
+.hdr-right{display:flex;align-items:center;gap:clamp(12px,1.2vw,24px)}
+.menu-btn{display:none}
+.tile{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 clamp(20px,1.6vw,34px);border-radius:12px;background:rgba(78,24,26,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--light);font:600 var(--body)/1.2 var(--sans);text-decoration:none;border:0;cursor:pointer;box-shadow:inset 0 0 0 1px var(--light2);overflow:hidden;isolation:isolate;white-space:nowrap}
+.tile--nav{min-height:44px;padding:0 20px;font-size:var(--small)}
+.tile--unrimmed{box-shadow:none}
+.tile--ghost{box-shadow:none;color:var(--text2)}
+.price-line{color:var(--text2);font-size:var(--small)}
+.cta-row{display:flex;align-items:center;flex-wrap:wrap;gap:16px 20px}
+.main{display:block}
+.stage{position:relative;background:var(--field)}
+.stage-pin{position:relative;min-height:100vh;height:100vh;overflow:hidden}
+.stage-media{position:absolute;inset:0}
+.stage-poster,.stage-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stage-poster--rm{display:none}
+.copy{position:absolute;left:var(--gutter);top:20vh;width:calc((100vw - 2*var(--gutter)) * 6 / 12);z-index:3}
+.h1--hero{font-size:clamp(2.5rem,1rem + 2.7vw,5.25rem)}
+.copy .subhead,.copy .cta-row{max-width:calc(100% * 5 / 6)}
+.eyebrow{margin:0 0 .75em;color:var(--text2);font-size:var(--small);font-weight:500;letter-spacing:.04em;text-transform:none}
+.h1{margin:0;font-weight:700;letter-spacing:-.015em;line-height:1.02;font-size:var(--h1)}
+.subhead,.intro{margin:1.1em 0 0;max-width:68ch;color:var(--text)}
+.copy .cta-row{margin-top:clamp(20px,2.4vh,36px)}
+.pocket{display:none}
+html:not(.js) [data-in],html.rm [data-in]{opacity:1}
+html.js:not(.rm):not(.nomotion) [data-in]{opacity:0}
+html.js:not(.rm):not(.nomotion) .stage[data-in]{opacity:1}
+</style>
+<link rel="stylesheet" href="/assets/css/site.css">
+
+</head>
+<body class="page-blog" data-route="/blog" data-hover="bar" >
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute" aria-hidden="true">
+<style> .icon{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round} .icon .fill{fill:currentColor;stroke:none} .icon .thick{stroke-width:2.5} .icon .faint{opacity:.55} .icon .pip{fill:#E9F1F8;stroke:none} .icon .badge{fill:#E9F1F8;stroke:none} .ic.is-lit{color:#E9F1F8}</style>
+<symbol id="icon-card" viewBox="0 0 20 20"><title>a card: the tile with its digits bar</title><g class="icon"><rect x="2.5" y="4.5" width="15" height="11" rx="3"/><path d="M5.5 12.5h4"/></g></symbol>
+<symbol id="icon-phone" viewBox="0 0 20 20"><title>a phone with a notification pip</title><g class="icon"><rect x="5.5" y="1.5" width="9" height="17" rx="3"/><path d="M8.5 15.5h3"/><circle cx="14.5" cy="4.5" r="1.6" class="pip"/></g></symbol>
+<symbol id="icon-reader" viewBox="0 0 20 20"><title>a card reader: three concentric arcs</title><g class="icon"><rect x="2.5" y="2.5" width="15" height="15" rx="3"/><path d="M7.5 12.5a3.5 3.5 0 0 1 5 0"/><path d="M5.8 10.6a6 6 0 0 1 8.4 0"/><path d="M10 14.6h.01"/></g></symbol>
+<symbol id="icon-rule" viewBox="0 0 20 20"><title>a rule: a card with an arrow to a small awning</title><g class="icon"><rect x="1.5" y="6.5" width="8" height="6" rx="1.8"/><path d="M11 9.5h3"/><path d="M12.8 7.8l1.7 1.7-1.7 1.7"/><path d="M15 4.5h4v3l-1 1.5h-2l-1-1.5z"/><path d="M16 9v3.5h2V9"/></g></symbol>
+<symbol id="icon-quarter" viewBox="0 0 20 20"><title>a quarter: a square split in four with one quadrant filled</title><g class="icon"><rect x="2.5" y="2.5" width="15" height="15" rx="3"/><path d="M10 2.5v15M2.5 10h15"/><path d="M10 10h7.5v4.5a3 3 0 0 1-3 3H10z" class="fill"/></g></symbol>
+<symbol id="icon-cap" viewBox="0 0 20 20"><title>a cap: a bar two thirds filled</title><g class="icon"><rect x="1.5" y="7.5" width="17" height="5" rx="2.5"/><rect x="1.5" y="7.5" width="11.5" height="5" rx="2.5" class="fill"/></g></symbol>
+<symbol id="icon-ledger" viewBox="0 0 20 20"><title>a ledger: three stacked bars with a longer total</title><g class="icon"><path d="M3.5 4.5h7M3.5 8.5h9M3.5 12.5h6"/><path d="M3.5 16.5h13" class="thick"/></g></symbol>
+<symbol id="icon-token" viewBox="0 0 20 20"><title>a token: a small key shaped tile with a notch</title><g class="icon"><rect x="2.5" y="6.5" width="10" height="7" rx="3"/><path d="M12.5 10h5v2.5M15.5 10v2"/><circle cx="6.5" cy="10" r="1" class="fill"/></g></symbol>
+<symbol id="icon-household" viewBox="0 0 20 20"><title>a household: five dots on an arc</title><g class="icon"><path d="M2.5 14a7.5 7.5 0 0 1 15 0" class="faint"/><circle cx="2.5" cy="14" r="1.4" class="fill"/><circle cx="5.3" cy="9" r="1.4" class="fill"/><circle cx="10" cy="6.5" r="1.4" class="fill"/><circle cx="14.7" cy="9" r="1.4" class="fill"/><circle cx="17.5" cy="14" r="1.4" class="fill"/></g></symbol>
+<symbol id="icon-wallet-link" viewBox="0 0 20 20"><title>a wallet link: two tiles joined by a short bar</title><g class="icon"><rect x="1.5" y="5.5" width="7" height="9" rx="2"/><rect x="11.5" y="5.5" width="7" height="9" rx="2"/><path d="M8.5 10h3"/></g></symbol>
+<symbol id="icon-tick" viewBox="0 0 20 20"><title>a tick inside the card</title><g class="icon"><rect x="2.5" y="4.5" width="15" height="11" rx="3"/><path d="M6.5 10.2l2.3 2.3 4.7-5"/></g></symbol>
+<symbol id="icon-cart" viewBox="0 0 20 20"><title>the cart: a card outline with a count badge</title><g class="icon"><rect x="2.5" y="5.5" width="13" height="10" rx="3"/><path d="M5.5 12.5h4"/><circle cx="15.5" cy="5.5" r="3" class="badge"/></g></symbol>
+<symbol id="icon-light" viewBox="0 0 20 20"><title>the light: a small pool under a dot</title><g class="icon"><circle cx="10" cy="7" r="1.8" class="fill"/><ellipse cx="10" cy="14" rx="6.5" ry="2.2"/><path d="M10 9v2.5"/></g></symbol>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#content">Skip to content</a>
+<header class="hdr" data-nav-cta="auto">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Cash Pass, home"><span class="lockup hdr-lockup"><svg class="lockup-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 56" width="250" height="56">
+<defs>
+<radialGradient id="pool-h-lkhdrlockup" data-part="pool-h" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9F1F8" stop-opacity="0.35"/><stop offset="1" stop-color="#E9F1F8" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade-h-lkhdrlockup" data-part="fade-h" x1="0" y1="41" x2="0" y2="51" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="mask-h-lkhdrlockup" data-part="mask-h" maskUnits="userSpaceOnUse" x="0" y="40" width="64" height="16"><rect x="0" y="40" width="64" height="16" fill="url(#fade-h-lkhdrlockup)"/></mask>
+</defs>
+<ellipse id="pool-lkhdrlockup" data-part="pool" cx="32" cy="40" rx="28" ry="7" fill="url(#pool-h-lkhdrlockup)"/>
+<g id="reflection-lkhdrlockup" data-part="reflection" mask="url(#mask-h-lkhdrlockup)"><g transform="matrix(1 0 0 -1 0 80)"><rect x="12" y="14" width="40" height="25" rx="3" fill="#E9F1F8"/><rect x="17" y="33" width="9" height="2" fill="#2E0B0C"/></g></g>
+<g id="card-lkhdrlockup" data-part="card"><rect id="card-face-lkhdrlockup" data-part="card-face" x="12" y="14" width="40" height="25" rx="3" fill="#E9F1F8"/><rect id="digits-lkhdrlockup" data-part="digits" x="17" y="33" width="9" height="2" fill="#2E0B0C"/></g>
+<path id="wordmark-lkhdrlockup" data-part="wordmark" d="M90.4 39.5Q85 39.5 82 36Q79 32.6 79 26.5Q79 20.4 81.9 17Q84.9 13.5 90.4 13.5Q93.7 13.5 96 14.7Q98.4 16 99.7 18.1Q101 20.3 101.2 23.2H95.9Q95.6 20.5 94.2 19Q92.7 17.5 90.4 17.5Q87.5 17.5 86 19.9Q84.5 22.2 84.5 26.5Q84.5 31 86.1 33.2Q87.6 35.4 90.4 35.4Q92.8 35.4 94.2 33.9Q95.6 32.4 95.9 29.8H101.2Q101 32.6 99.7 34.8Q98.4 37 96 38.2Q93.7 39.5 90.4 39.5Z M110.6 39.4Q107.9 39.4 106.2 38.1Q104.4 36.8 103.6 34.5Q102.8 32.2 102.8 29.3Q102.8 26.4 103.6 24.1Q104.5 21.9 106.2 20.6Q107.9 19.4 110.6 19.4Q112.6 19.4 113.9 20.2Q115.2 20.9 115.9 22.3H116.6V19.8H121.4V39H116.6V36.5H115.9Q115.2 37.7 113.9 38.6Q112.6 39.4 110.6 39.4ZM111.9 35.7Q113.9 35.7 115.1 34Q116.2 32.3 116.2 29.4Q116.2 26.4 115.1 24.7Q113.9 23 111.9 23Q110.2 23 109.2 24.6Q108.2 26.2 108.2 29.4Q108.2 32.6 109.2 34.1Q110.2 35.7 111.9 35.7Z M133 39.5Q129.8 39.5 127.9 38.5Q126 37.5 125.1 35.9Q124.2 34.4 124.1 32.8H129Q129.2 33.7 129.7 34.4Q130.2 35.1 131.1 35.4Q132 35.8 133.2 35.8Q134.8 35.8 135.5 35.3Q136.1 34.8 136.1 33.9Q136.1 33.2 135.5 32.6Q134.9 32.1 133.5 31.7L131.2 30.9Q129.5 30.3 128.1 29.6Q126.7 28.9 125.8 27.8Q125 26.7 125 25Q125 22.4 126.9 20.9Q128.9 19.3 132.5 19.3Q135.1 19.3 136.7 20.1Q138.4 20.9 139.2 22.2Q140 23.5 140.2 25.1H135.4Q135.3 24 134.5 23.4Q133.7 22.7 132.3 22.7Q131 22.7 130.4 23.2Q129.8 23.7 129.8 24.5Q129.8 25.4 130.5 25.9Q131.1 26.5 132.5 26.9L134.8 27.6Q136.5 28.2 137.9 28.8Q139.3 29.5 140.1 30.6Q140.9 31.7 140.9 33.5Q140.9 36.2 138.9 37.8Q136.9 39.5 133 39.5Z M143.7 39V13.3H148.9V22.1H149.7Q150.3 20.8 151.5 20.1Q152.6 19.3 154.6 19.3Q157.8 19.3 159.4 21.3Q161 23.3 161 26.8V39H155.8V27.6Q155.8 25.7 155.1 24.6Q154.4 23.5 152.8 23.5Q151 23.5 149.9 25Q148.9 26.4 148.9 28.6V39Z M172.3 39V14H182.7Q187.5 14 189.7 16Q192 18 192 21.5Q192 24.9 189.8 27Q187.6 29 182.7 29H177.6V39ZM177.6 25H181.9Q184.1 25 185.3 24.2Q186.6 23.5 186.6 21.5Q186.6 19.6 185.3 18.8Q184.1 18 181.9 18H177.6Z M201.3 39.4Q198.6 39.4 196.8 38.1Q195.1 36.8 194.3 34.5Q193.4 32.2 193.4 29.3Q193.4 26.4 194.3 24.1Q195.1 21.9 196.9 20.6Q198.6 19.4 201.2 19.4Q203.3 19.4 204.6 20.2Q205.9 20.9 206.5 22.3H207.3V19.8H212.1V39H207.3V36.5H206.5Q205.9 37.7 204.6 38.6Q203.3 39.4 201.3 39.4ZM202.6 35.7Q204.6 35.7 205.7 34Q206.9 32.3 206.9 29.4Q206.9 26.4 205.7 24.7Q204.6 23 202.6 23Q200.8 23 199.8 24.6Q198.8 26.2 198.8 29.4Q198.8 32.6 199.8 34.1Q200.8 35.7 202.6 35.7Z M223.7 39.5Q220.4 39.5 218.5 38.5Q216.6 37.5 215.7 35.9Q214.9 34.4 214.7 32.8H219.7Q219.8 33.7 220.4 34.4Q220.9 35.1 221.8 35.4Q222.7 35.8 223.9 35.8Q225.5 35.8 226.1 35.3Q226.8 34.8 226.8 33.9Q226.8 33.2 226.2 32.6Q225.6 32.1 224.1 31.7L221.8 30.9Q220.2 30.3 218.7 29.6Q217.3 28.9 216.5 27.8Q215.6 26.7 215.6 25Q215.6 22.4 217.6 20.9Q219.6 19.3 223.1 19.3Q225.7 19.3 227.4 20.1Q229 20.9 229.9 22.2Q230.7 23.5 230.8 25.1H226.1Q225.9 24 225.1 23.4Q224.3 22.7 223 22.7Q221.7 22.7 221.1 23.2Q220.4 23.7 220.4 24.5Q220.4 25.4 221.1 25.9Q221.8 26.5 223.2 26.9L225.5 27.6Q227.2 28.2 228.6 28.8Q229.9 29.5 230.8 30.6Q231.6 31.7 231.6 33.5Q231.6 36.2 229.6 37.8Q227.5 39.5 223.7 39.5Z M241.6 39.5Q238.4 39.5 236.4 38.5Q234.5 37.5 233.7 35.9Q232.8 34.4 232.6 32.8H237.6Q237.7 33.7 238.3 34.4Q238.8 35.1 239.7 35.4Q240.6 35.8 241.8 35.8Q243.4 35.8 244 35.3Q244.7 34.8 244.7 33.9Q244.7 33.2 244.1 32.6Q243.5 32.1 242 31.7L239.7 30.9Q238.1 30.3 236.7 29.6Q235.2 28.9 234.4 27.8Q233.5 26.7 233.5 25Q233.5 22.4 235.5 20.9Q237.5 19.3 241 19.3Q243.6 19.3 245.3 20.1Q247 20.9 247.8 22.2Q248.6 23.5 248.7 25.1H244Q243.8 24 243 23.4Q242.2 22.7 240.9 22.7Q239.6 22.7 239 23.2Q238.4 23.7 238.4 24.5Q238.4 25.4 239 25.9Q239.7 26.5 241.1 26.9L243.4 27.6Q245.1 28.2 246.5 28.8Q247.8 29.5 248.7 30.6Q249.5 31.7 249.5 33.5Q249.5 36.2 247.5 37.8Q245.4 39.5 241.6 39.5Z" fill="#F5EDE8"/>
+</svg>
+</span></a>
+    <nav class="hdr-nav" aria-label="Primary"><ul class="hg"><li><a href="/how-it-works">How it works</a></li><li><a href="/product">The app</a></li><li><a href="/plans">Plans</a></li><li><a href="/quiz">Find your plan</a></li><li><a href="/blog" aria-current="page">Blog</a></li><li><a href="/about">About</a></li></ul></nav>
+    <div class="hdr-right">
+      <a class="cart-link" href="/cart" aria-label="Cart, empty" data-cart-link><svg class="mark cart-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><span class="cart-count" data-cart-count hidden></span></a>
+      <a class="tile tile--nav tile--unrimmed" href="/cart?add=pass" data-add-plan="pass" data-nav-tile>Buy Pass</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>Menu</button>
+    </div>
+  </div>
+  <div class="menu" id="mobile-menu" hidden data-menu>
+    <div class="menu-in">
+      <div class="menu-top"><span class="menu-word">Cash Pass</span><button class="menu-close" type="button" data-menu-close>Close</button></div>
+      <ul class="menu-links"><li><a href="/how-it-works">How it works</a></li><li><a href="/product">The app</a></li><li><a href="/plans">Plans</a></li><li><a href="/quiz">Find your plan</a></li><li><a href="/blog" aria-current="page">Blog</a></li><li><a href="/about">About</a></li></ul>
+      <div class="menu-cta"><a class="tile" href="/cart?add=pass" data-add-plan="pass">Buy Pass</a><span class="price-line">$59 a year. Cancel any time.</span></div>
+    </div>
+  </div>
+</header>
+<main id="content" class="main" tabindex="-1">
+<section class="hero hero--blog" data-in="mask-rise">
+  <div class="hero-in blog-hero">
+    <div class="blog-hero-copy">
+      <p class="eyebrow">Blog</p>
+      <h1 class="h1">Things nobody tells you at the counter.</h1>
+      <p class="dek intro">Short pieces on caps, quarters, fees and the way shops code. Each one takes a fact that lives in your issuer's terms and nowhere in your day, and puts it where you'd need it: in your hand, at the till.</p>
+    </div>
+    <div class="wheel" data-wheel>
+      <div class="scene scene--wheel" data-scene="wheel" aria-hidden="true" data-composed></div>
+      <div class="wheel-fallback" data-wheel-fallback aria-hidden="true">
+        <svg class="wheel-svg" viewBox="0 0 200 200" data-wheel-svg><g class="wheel-g" data-wheel-g><path data-wq="0" class="wq" d="M108.2 22.4 A78 78 0 0 1 177.6 91.8 L145.7 95.2 A46 46 0 0 0 104.8 54.3 Z"/><path data-wq="1" class="wq" d="M177.6 108.2 A78 78 0 0 1 108.2 177.6 L104.8 145.7 A46 46 0 0 0 145.7 104.8 Z"/><path data-wq="2" class="wq" d="M91.8 177.6 A78 78 0 0 1 22.4 108.2 L54.3 104.8 A46 46 0 0 0 95.2 145.7 Z"/><path data-wq="3" class="wq is-lit" d="M22.4 91.8 A78 78 0 0 1 91.8 22.4 L95.2 54.3 A46 46 0 0 0 54.3 95.2 Z"/></g></svg>
+      </div>
+      <ul class="wheel-cats" data-wheel-cats aria-hidden="true"><li>department stores</li><li>streaming</li><li>fitness clubs</li></ul>
+      <p class="wheel-label" aria-hidden="true" data-wheel-label>Q4 opens Oct 1</p>
+    </div>
+  </div>
+</section>
+<section class="latest" aria-labelledby="latest-h" data-in="shelf-right">
+  <div class="latest-bg"><picture class="pic pic--cover"><source type="image/webp" srcset="/assets/media/photo/photo-blog-01-640.webp 640w, /assets/media/photo/photo-blog-01-1280.webp 1280w, /assets/media/photo/photo-blog-01-1920.webp 1920w, /assets/media/photo/photo-blog-01-2560.webp 2560w" sizes="100vw"><img class="" src="/assets/media/photo/photo-blog-01.jpg" width="1920" height="1280" alt="A phone lies on a car's passenger seat at night with the cool light of a fuel station canopy across it." loading="lazy" decoding="async"></picture></div>
+  <div class="latest-in">
+    <h2 class="latest-label" id="latest-h">Latest</h2>
+    <ul class="latest-shelf" data-shelf><li class="pcard pcard--shelf" data-topic="quarters" data-pcard>
+    <div class="pcard-top"><svg class="mark pcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><svg class="ic pcard-ic" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-quarter"></use></svg></div>
+    <h3 class="pcard-title"><a href="/blog/four-quarters-four-chances-to-forget"><span class="hb">Four quarters, four chances to forget.</span></a></h3>
+    <p class="pcard-dek">A rotating card pays its 5 percent only after you tell the issuer you want it. Here's why that step keeps getting skipped, and the habit that makes it stop.</p>
+    <p class="pcard-meta"><span class="topic-chip topic-chip--static">Quarters</span><span class="post-read">4 min read</span></p>
+  </li><li class="pcard pcard--shelf" data-topic="caps" data-pcard>
+    <div class="pcard-top"><svg class="mark pcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><svg class="ic pcard-ic" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-cap"></use></svg></div>
+    <h3 class="pcard-title"><a href="/blog/the-day-a-6-percent-card-became-a-1-percent-card"><span class="hb">On October 14, a 6 percent card became a 1 percent card.</span></a></h3>
+    <p class="pcard-dek">Annual caps don't announce themselves. This is what happens to a grocery card in the last quarter of the year, and why the cafe inside the supermarket was never the supermarket.</p>
+    <p class="pcard-meta"><span class="topic-chip topic-chip--static">Caps</span><span class="post-read">4 min read</span></p>
+  </li><li class="pcard pcard--shelf" data-topic="fees" data-pcard>
+    <div class="pcard-top"><svg class="mark pcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><svg class="ic pcard-ic" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-ledger"></use></svg></div>
+    <h3 class="pcard-title"><a href="/blog/the-honest-math-of-annual-fees"><span class="hb">A $225 annual fee, and the honest way to know if the card earned it.</span></a></h3>
+    <p class="pcard-dek">The number that matters isn't what a card earned. It's what's left after its fee comes off, set beside what a plain 2 percent card would have done instead. One example year, worked in full.</p>
+    <p class="pcard-meta"><span class="topic-chip topic-chip--static">Fees</span><span class="post-read">4 min read</span></p>
+  </li></ul>
+  </div>
+</section>
+<section class="allposts" aria-labelledby="all-h" data-in="masonry">
+  <h2 class="vh" id="all-h">All posts</h2>
+  <div class="chips" role="group" aria-label="Filter by topic" data-chips><button class="fchip" type="button" aria-pressed="true" data-filter="all">All</button><button class="fchip" type="button" aria-pressed="false" data-filter="quarters">Quarters</button><button class="fchip" type="button" aria-pressed="false" data-filter="caps">Caps</button><button class="fchip" type="button" aria-pressed="false" data-filter="fees">Fees</button></div>
+  <ul class="masonry cards-auto" data-masonry><li class="pcard pcard--grid" data-topic="quarters" data-pcard>
+    <div class="pcard-top"><svg class="mark pcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><svg class="ic pcard-ic" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-quarter"></use></svg></div>
+    <h3 class="pcard-title"><a href="/blog/four-quarters-four-chances-to-forget"><span class="hb">Four quarters, four chances to forget.</span></a></h3>
+    <p class="pcard-dek">A rotating card pays its 5 percent only after you tell the issuer you want it. Here's why that step keeps getting skipped, and the habit that makes it stop.</p>
+    <p class="pcard-meta"><span class="topic-chip topic-chip--static">Quarters</span><span class="post-read">4 min read</span></p>
+  </li><li class="pcard pcard--grid" data-topic="caps" data-pcard>
+    <div class="pcard-top"><svg class="mark pcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><svg class="ic pcard-ic" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-cap"></use></svg></div>
+    <h3 class="pcard-title"><a href="/blog/the-day-a-6-percent-card-became-a-1-percent-card"><span class="hb">On October 14, a 6 percent card became a 1 percent card.</span></a></h3>
+    <p class="pcard-dek">Annual caps don't announce themselves. This is what happens to a grocery card in the last quarter of the year, and why the cafe inside the supermarket was never the supermarket.</p>
+    <p class="pcard-meta"><span class="topic-chip topic-chip--static">Caps</span><span class="post-read">4 min read</span></p>
+  </li><li class="pcard pcard--grid" data-topic="fees" data-pcard>
+    <div class="pcard-top"><svg class="mark pcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg><svg class="ic pcard-ic" width="20" height="20" aria-hidden="true" focusable="false"><use href="#icon-ledger"></use></svg></div>
+    <h3 class="pcard-title"><a href="/blog/the-honest-math-of-annual-fees"><span class="hb">A $225 annual fee, and the honest way to know if the card earned it.</span></a></h3>
+    <p class="pcard-dek">The number that matters isn't what a card earned. It's what's left after its fee comes off, set beside what a plain 2 percent card would have done instead. One example year, worked in full.</p>
+    <p class="pcard-meta"><span class="topic-chip topic-chip--static">Fees</span><span class="post-read">4 min read</span></p>
+  </li></ul>
+</section>
+<section class="close" aria-labelledby="close-h" data-in="close">
+  <div class="close-in">
+    <h2 class="close-h" id="close-h">Buy Pass</h2>
+    <div class="close-body">
+      <p class="close-p">Every piece above ends at the same door, because the fix is the same each time: something that reads the terms so you don't have to. Pass does that reading all year.</p>
+      <div class="cta-row"><a class="tile" href="/cart?add=pass" data-add-plan="pass" data-hero-cta>Buy Pass</a><span class="price-line">$59 a year. Cancel any time.</span></div>
+    </div>
+  </div>
+  <div class="pool-divider" aria-hidden="true"></div>
+</section>
+</main>
+<footer class="ftr" data-footer>
+  <div class="ftr-in">
+    <div class="ftr-row1">
+      <div class="ftr-brand">
+        <a class="brand brand--ftr" href="/" aria-label="Cash Pass, home"><span class="lockup ftr-lockup"><svg class="lockup-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 56" width="250" height="56">
+<defs>
+<radialGradient id="pool-h-lkftrlockup" data-part="pool-h" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9F1F8" stop-opacity="0.35"/><stop offset="1" stop-color="#E9F1F8" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade-h-lkftrlockup" data-part="fade-h" x1="0" y1="41" x2="0" y2="51" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="mask-h-lkftrlockup" data-part="mask-h" maskUnits="userSpaceOnUse" x="0" y="40" width="64" height="16"><rect x="0" y="40" width="64" height="16" fill="url(#fade-h-lkftrlockup)"/></mask>
+</defs>
+<ellipse id="pool-lkftrlockup" data-part="pool" cx="32" cy="40" rx="28" ry="7" fill="url(#pool-h-lkftrlockup)"/>
+<g id="reflection-lkftrlockup" data-part="reflection" mask="url(#mask-h-lkftrlockup)"><g transform="matrix(1 0 0 -1 0 80)"><rect x="12" y="14" width="40" height="25" rx="3" fill="#E9F1F8"/><rect x="17" y="33" width="9" height="2" fill="#2E0B0C"/></g></g>
+<g id="card-lkftrlockup" data-part="card"><rect id="card-face-lkftrlockup" data-part="card-face" x="12" y="14" width="40" height="25" rx="3" fill="#E9F1F8"/><rect id="digits-lkftrlockup" data-part="digits" x="17" y="33" width="9" height="2" fill="#2E0B0C"/></g>
+<path id="wordmark-lkftrlockup" data-part="wordmark" d="M90.4 39.5Q85 39.5 82 36Q79 32.6 79 26.5Q79 20.4 81.9 17Q84.9 13.5 90.4 13.5Q93.7 13.5 96 14.7Q98.4 16 99.7 18.1Q101 20.3 101.2 23.2H95.9Q95.6 20.5 94.2 19Q92.7 17.5 90.4 17.5Q87.5 17.5 86 19.9Q84.5 22.2 84.5 26.5Q84.5 31 86.1 33.2Q87.6 35.4 90.4 35.4Q92.8 35.4 94.2 33.9Q95.6 32.4 95.9 29.8H101.2Q101 32.6 99.7 34.8Q98.4 37 96 38.2Q93.7 39.5 90.4 39.5Z M110.6 39.4Q107.9 39.4 106.2 38.1Q104.4 36.8 103.6 34.5Q102.8 32.2 102.8 29.3Q102.8 26.4 103.6 24.1Q104.5 21.9 106.2 20.6Q107.9 19.4 110.6 19.4Q112.6 19.4 113.9 20.2Q115.2 20.9 115.9 22.3H116.6V19.8H121.4V39H116.6V36.5H115.9Q115.2 37.7 113.9 38.6Q112.6 39.4 110.6 39.4ZM111.9 35.7Q113.9 35.7 115.1 34Q116.2 32.3 116.2 29.4Q116.2 26.4 115.1 24.7Q113.9 23 111.9 23Q110.2 23 109.2 24.6Q108.2 26.2 108.2 29.4Q108.2 32.6 109.2 34.1Q110.2 35.7 111.9 35.7Z M133 39.5Q129.8 39.5 127.9 38.5Q126 37.5 125.1 35.9Q124.2 34.4 124.1 32.8H129Q129.2 33.7 129.7 34.4Q130.2 35.1 131.1 35.4Q132 35.8 133.2 35.8Q134.8 35.8 135.5 35.3Q136.1 34.8 136.1 33.9Q136.1 33.2 135.5 32.6Q134.9 32.1 133.5 31.7L131.2 30.9Q129.5 30.3 128.1 29.6Q126.7 28.9 125.8 27.8Q125 26.7 125 25Q125 22.4 126.9 20.9Q128.9 19.3 132.5 19.3Q135.1 19.3 136.7 20.1Q138.4 20.9 139.2 22.2Q140 23.5 140.2 25.1H135.4Q135.3 24 134.5 23.4Q133.7 22.7 132.3 22.7Q131 22.7 130.4 23.2Q129.8 23.7 129.8 24.5Q129.8 25.4 130.5 25.9Q131.1 26.5 132.5 26.9L134.8 27.6Q136.5 28.2 137.9 28.8Q139.3 29.5 140.1 30.6Q140.9 31.7 140.9 33.5Q140.9 36.2 138.9 37.8Q136.9 39.5 133 39.5Z M143.7 39V13.3H148.9V22.1H149.7Q150.3 20.8 151.5 20.1Q152.6 19.3 154.6 19.3Q157.8 19.3 159.4 21.3Q161 23.3 161 26.8V39H155.8V27.6Q155.8 25.7 155.1 24.6Q154.4 23.5 152.8 23.5Q151 23.5 149.9 25Q148.9 26.4 148.9 28.6V39Z M172.3 39V14H182.7Q187.5 14 189.7 16Q192 18 192 21.5Q192 24.9 189.8 27Q187.6 29 182.7 29H177.6V39ZM177.6 25H181.9Q184.1 25 185.3 24.2Q186.6 23.5 186.6 21.5Q186.6 19.6 185.3 18.8Q184.1 18 181.9 18H177.6Z M201.3 39.4Q198.6 39.4 196.8 38.1Q195.1 36.8 194.3 34.5Q193.4 32.2 193.4 29.3Q193.4 26.4 194.3 24.1Q195.1 21.9 196.9 20.6Q198.6 19.4 201.2 19.4Q203.3 19.4 204.6 20.2Q205.9 20.9 206.5 22.3H207.3V19.8H212.1V39H207.3V36.5H206.5Q205.9 37.7 204.6 38.6Q203.3 39.4 201.3 39.4ZM202.6 35.7Q204.6 35.7 205.7 34Q206.9 32.3 206.9 29.4Q206.9 26.4 205.7 24.7Q204.6 23 202.6 23Q200.8 23 199.8 24.6Q198.8 26.2 198.8 29.4Q198.8 32.6 199.8 34.1Q200.8 35.7 202.6 35.7Z M223.7 39.5Q220.4 39.5 218.5 38.5Q216.6 37.5 215.7 35.9Q214.9 34.4 214.7 32.8H219.7Q219.8 33.7 220.4 34.4Q220.9 35.1 221.8 35.4Q222.7 35.8 223.9 35.8Q225.5 35.8 226.1 35.3Q226.8 34.8 226.8 33.9Q226.8 33.2 226.2 32.6Q225.6 32.1 224.1 31.7L221.8 30.9Q220.2 30.3 218.7 29.6Q217.3 28.9 216.5 27.8Q215.6 26.7 215.6 25Q215.6 22.4 217.6 20.9Q219.6 19.3 223.1 19.3Q225.7 19.3 227.4 20.1Q229 20.9 229.9 22.2Q230.7 23.5 230.8 25.1H226.1Q225.9 24 225.1 23.4Q224.3 22.7 223 22.7Q221.7 22.7 221.1 23.2Q220.4 23.7 220.4 24.5Q220.4 25.4 221.1 25.9Q221.8 26.5 223.2 26.9L225.5 27.6Q227.2 28.2 228.6 28.8Q229.9 29.5 230.8 30.6Q231.6 31.7 231.6 33.5Q231.6 36.2 229.6 37.8Q227.5 39.5 223.7 39.5Z M241.6 39.5Q238.4 39.5 236.4 38.5Q234.5 37.5 233.7 35.9Q232.8 34.4 232.6 32.8H237.6Q237.7 33.7 238.3 34.4Q238.8 35.1 239.7 35.4Q240.6 35.8 241.8 35.8Q243.4 35.8 244 35.3Q244.7 34.8 244.7 33.9Q244.7 33.2 244.1 32.6Q243.5 32.1 242 31.7L239.7 30.9Q238.1 30.3 236.7 29.6Q235.2 28.9 234.4 27.8Q233.5 26.7 233.5 25Q233.5 22.4 235.5 20.9Q237.5 19.3 241 19.3Q243.6 19.3 245.3 20.1Q247 20.9 247.8 22.2Q248.6 23.5 248.7 25.1H244Q243.8 24 243 23.4Q242.2 22.7 240.9 22.7Q239.6 22.7 239 23.2Q238.4 23.7 238.4 24.5Q238.4 25.4 239 25.9Q239.7 26.5 241.1 26.9L243.4 27.6Q245.1 28.2 246.5 28.8Q247.8 29.5 248.7 30.6Q249.5 31.7 249.5 33.5Q249.5 36.2 247.5 37.8Q245.4 39.5 241.6 39.5Z" fill="#F5EDE8"/>
+</svg>
+</span></a>
+        <p class="ftr-sentence">A card picker for the phone you already carry, naming which of your own cards to tap and why, in one line.</p>
+      </div>
+      <div class="ftr-cta"><a class="tile " href="/cart?add=pass" data-add-plan="pass">Buy Pass</a><span class="price-line">$59 a year. Cancel any time.</span></div>
+    </div>
+    <div class="ftr-row2">
+      <nav class="ftr-group" aria-labelledby="ftr-g1"><h2 class="ftr-h" id="ftr-g1">Cash Pass</h2><ul class="hg"><li><a href="/how-it-works">How it works</a></li><li><a href="/product">The app</a></li><li><a href="/plans">Plans</a></li><li><a href="/quiz">Find your plan</a></li></ul></nav>
+      <nav class="ftr-group" aria-labelledby="ftr-g2"><h2 class="ftr-h" id="ftr-g2">Read</h2><ul class="hg"><li><a href="/blog">Blog</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></nav>
+      <nav class="ftr-group" aria-labelledby="ftr-g3"><h2 class="ftr-h" id="ftr-g3">Legal</h2><ul class="hg"><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms-of-service">Terms of Service</a></li></ul></nav>
+      <div class="ftr-group ftr-contact"><h2 class="ftr-h">Contact</h2><address class="ftr-address"><span class="ftr-line">1125 17th Street, Suite 1275, Denver, CO 80202</span><span class="ftr-line">[INSERT PHONE HERE]</span><a class="ftr-line" href="mailto:support@yourcashpass.com">support@yourcashpass.com</a></address></div>
+    </div>
+    <div class="ftr-row3"><section class="sms sms--footer" aria-labelledby="sms-footer-heading" data-sms>
+<p class="sms-lead"><span>Texts from Cash Pass: the reminder before each rotating quarter opens, renewal notices, receipts and plan news.</span></p>
+<form class="sms-form" id="sms-footer-form" novalidate data-sms-form>
+  <h2 class="sms-heading" id="sms-footer-heading">Join Our SMS List</h2>
+  <div class="err-summary" role="alert" tabindex="-1" hidden data-err-summary>
+    <h3 class="err-title">There is a problem</h3>
+    <p class="err-lead" data-err-lead>Fix the item below to continue.</p>
+    <ul class="err-list" data-err-list></ul>
+  </div>
+  <div class="field" data-field>
+    <label class="label" for="sms-footer-phone">Your Phone Number</label>
+    <input class="input" id="sms-footer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Your Phone Number" data-validate="sms-phone">
+    <p class="field-err" id="sms-footer-phone-err" hidden></p>
+  </div>
+  <div class="field field--check" data-field>
+    <input class="check" id="sms-footer-c1" name="consent_terms" type="checkbox" data-validate="sms-c1">
+    <label class="check-label" for="sms-footer-c1">I agree to the <a href="/terms-of-service">Terms</a> &amp; <a href="/privacy-policy">Privacy Policy</a></label>
+    <p class="field-err" id="sms-footer-c1-err" hidden></p>
+  </div>
+  <div class="field field--check" data-field>
+    <input class="check" id="sms-footer-c2" name="consent_sms" type="checkbox" data-validate="sms-c2">
+    <label class="check-label" for="sms-footer-c2">I agree to receive SMS marketing notifications from Cash Pass. Reply HELP for help or call/email [INSERT PHONE HERE] / support@yourcashpass.com STOP to cancel. Msg &amp; data rates may apply. Msg frequency varies. Information gathered in the SMS campaign will not be shared with third parties or affiliates for marketing purposes. Read our <a href="/terms-of-service">Terms</a> and <a href="/privacy-policy">Privacy Policy</a>.</label>
+    <p class="field-err" id="sms-footer-c2-err" hidden></p>
+  </div>
+  <div class="sms-actions"><button class="tile tile--unrimmed" type="submit">Submit</button></div>
+  <p class="sms-status" role="status" aria-live="polite" data-sms-status></p>
+</form>
+</section></div>
+    <div class="ftr-row4">
+      <p class="ftr-closing">One card stays lit.</p>
+      <div class="glass-strip" aria-hidden="true"><div class="fcards"><span class="fcard" data-fcard><svg class="mark fcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg></span><span class="fcard" data-fcard><svg class="mark fcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg></span><span class="fcard" data-fcard><svg class="mark fcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg></span><span class="fcard fcard--lit" data-fcard><svg class="mark fcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg></span><span class="fcard" data-fcard><svg class="mark fcard-mark" viewBox="12 14 40 25" width="12" height="8" aria-hidden="true" focusable="false"><rect class="mark-card" x="12.9" y="14.9" width="38.2" height="23.2" rx="3"/><rect class="mark-bar" x="17" y="33" width="9" height="2" rx="1"/></svg></span></div><div class="glass-reflect"></div></div>
+    </div>
+    <div class="ftr-row5">
+      <p class="ftr-small">Rewards are set and paid by your card issuer. Figures on this site are examples.</p>
+      <p class="ftr-copy">© 2026 Cash Pass</p>
+      <div class="ftr-seal" data-seal><svg class="kit seal seal--56" aria-hidden="true" focusable="false" width="56" height="56" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<radialGradient id="pool-seal-k18" data-part="pool-seal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9F1F8" stop-opacity="0.35"/><stop offset="1" stop-color="#E9F1F8" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade-seal-k18" data-part="fade-seal" x1="0" y1="41" x2="0" y2="51" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="mask-seal-k18" data-part="mask-seal" maskUnits="userSpaceOnUse" x="0" y="40" width="64" height="16"><rect x="0" y="40" width="64" height="16" fill="url(#fade-seal-k18)"/></mask>
+</defs>
+<g id="seal-ring-k18" data-part="seal-ring"><path id="arc-1-k18" data-part="arc-1" d="M85.4 28.3 A52 52 0 0 1 127.5 58.8" fill="none" stroke="#CDB3AE" stroke-width="1.25" stroke-linecap="round"/><path id="arc-2-k18" data-part="arc-2" d="M130.9 69.2 A52 52 0 0 1 114.8 118.6" fill="none" stroke="#CDB3AE" stroke-width="1.25" stroke-linecap="round"/><path id="arc-3-k18" data-part="arc-3" d="M106 125 A52 52 0 0 1 54 125" fill="none" stroke="#CDB3AE" stroke-width="1.25" stroke-linecap="round"/><path id="arc-4-k18" data-part="arc-4" d="M45.2 118.6 A52 52 0 0 1 29.1 69.2" fill="none" stroke="#CDB3AE" stroke-width="1.25" stroke-linecap="round"/><path id="arc-5-k18" data-part="arc-5" d="M32.5 58.8 A52 52 0 0 1 74.6 28.3" fill="none" stroke="#CDB3AE" stroke-width="1.25" stroke-linecap="round"/></g>
+<path id="seal-text-k18" data-part="seal-text" d="M79.5 20.2Q77 20.3 75.6 18.7Q74.2 17.1 74.1 14.2Q74.1 11.4 75.5 9.8Q76.8 8.1 79.4 8.1Q80.9 8.1 81.9 8.6Q83 9.2 83.6 10.2Q84.3 11.2 84.4 12.5L82.1 12.5Q82 11.3 81.2 10.6Q80.5 9.8 79.4 9.9Q77.9 9.9 77.2 11Q76.5 12.1 76.5 14.2Q76.5 16.3 77.3 17.4Q78.1 18.5 79.5 18.5Q80.7 18.5 81.3 17.7Q82 16.9 82.1 15.8L84.4 15.7Q84.3 17 83.7 18Q83.1 19 82.1 19.6Q81 20.2 79.5 20.2Z M88.3 20.3 88.3 20.2 94.5 9.8 98 10.6 98.9 22.7 98.9 22.8 96.5 22.2 96.4 19.1 92 18.1 90.4 20.8ZM96.2 17.2 95.9 11.9 95.6 11.9 92.9 16.5Z M106.8 26.6Q105.6 26 105 25.3Q104.3 24.5 104.1 23.8Q103.8 23 103.9 22.2Q103.9 21.4 104.2 20.8L106.1 21.7Q105.9 22.2 106 22.9Q106 23.5 106.4 24Q106.8 24.6 107.7 25Q108.6 25.5 109.2 25.3Q109.9 25.2 110.2 24.6Q110.5 24 110.2 23.4Q110 22.8 109.5 22.3L108.3 21.1Q107.7 20.5 107.2 19.8Q106.7 19.1 106.6 18.3Q106.4 17.5 106.9 16.6Q107.3 15.7 108.1 15.3Q108.9 14.9 109.9 15Q110.9 15 111.9 15.6Q113.3 16.2 113.8 17.1Q114.4 18 114.4 18.9Q114.5 19.8 114.1 20.6L112.2 19.6Q112.4 19.2 112.4 18.8Q112.3 18.3 112.1 17.9Q111.8 17.4 111.1 17.1Q110.3 16.7 109.7 16.8Q109.2 17 108.9 17.5Q108.6 18 108.9 18.6Q109.2 19.1 109.7 19.7L110.9 20.9Q111.5 21.5 112 22.2Q112.5 22.8 112.6 23.6Q112.7 24.4 112.3 25.4Q111.5 26.9 110.1 27.2Q108.6 27.5 106.8 26.6Z M115.1 31.1 122.6 22.2 124.4 23.7 121.5 27.1 125.5 30.5 128.4 27 130.1 28.5 122.6 37.4 120.8 35.9 124.2 31.9 120.3 28.5 116.8 32.6Z M130.4 47.2 140.6 41.5 142.9 45.6Q144 47.5 143.6 48.9Q143.3 50.2 141.9 51Q140.5 51.8 139.2 51.4Q137.9 50.9 136.8 49L135.6 46.8L131.5 49.1ZM137.1 46 138.2 47.9Q138.7 48.8 139.3 49.1Q140 49.5 140.8 49Q141.6 48.6 141.7 47.8Q141.7 47.1 141.2 46.2L140.2 44.3Z M136.3 58.6 136.4 58.6 148.5 58.9 149.5 62.4 139.3 69 139.2 69 138.6 66.7 141.3 65 140.1 60.8 136.9 60.7ZM142.8 64.1 147.3 61.2 147.2 60.9 141.9 60.8Z M139.7 77.8Q139.7 76.5 140 75.6Q140.3 74.7 140.9 74Q141.4 73.4 142.2 73.1Q142.9 72.8 143.6 72.7L143.7 74.9Q143.1 74.9 142.6 75.3Q142.1 75.6 141.8 76.2Q141.5 76.9 141.5 77.8Q141.5 78.8 142 79.3Q142.4 79.8 143.1 79.8Q143.8 79.8 144.2 79.3Q144.6 78.8 144.8 78.1L145.2 76.5Q145.5 75.7 145.8 74.9Q146.2 74.1 146.8 73.6Q147.5 73.1 148.5 73.1Q149.5 73 150.2 73.5Q151 74 151.4 74.9Q151.8 75.8 151.8 77Q151.9 78.5 151.4 79.4Q150.9 80.3 150.2 80.8Q149.4 81.2 148.5 81.4L148.4 79.2Q148.9 79.1 149.3 78.9Q149.7 78.7 149.9 78.2Q150.1 77.7 150.1 77Q150.1 76.1 149.7 75.7Q149.3 75.3 148.7 75.3Q148.1 75.3 147.7 75.8Q147.4 76.3 147.2 77.1L146.7 78.6Q146.5 79.5 146.1 80.2Q145.7 81 145.1 81.5Q144.5 82 143.4 82Q141.7 82.1 140.8 81Q139.8 79.9 139.7 77.8Z M138.7 91.3Q138.9 90 139.5 89.2Q140 88.4 140.7 87.9Q141.3 87.4 142.1 87.3Q142.9 87.2 143.6 87.2L143.2 89.4Q142.6 89.3 142 89.5Q141.5 89.7 141 90.3Q140.6 90.8 140.4 91.7Q140.2 92.7 140.5 93.3Q140.9 93.9 141.5 94Q142.2 94.1 142.7 93.8Q143.2 93.4 143.6 92.7L144.4 91.3Q144.8 90.5 145.3 89.9Q145.8 89.2 146.6 88.8Q147.3 88.5 148.3 88.7Q149.3 88.9 149.9 89.5Q150.5 90.2 150.7 91.1Q150.9 92.1 150.7 93.3Q150.4 94.7 149.7 95.5Q149 96.3 148.2 96.6Q147.3 96.8 146.4 96.8L146.8 94.6Q147.3 94.7 147.7 94.5Q148.2 94.4 148.5 94Q148.8 93.6 149 92.8Q149.2 92 148.9 91.5Q148.6 91 148 90.9Q147.4 90.8 146.9 91.2Q146.5 91.6 146.1 92.3L145.3 93.7Q144.9 94.5 144.4 95.1Q143.8 95.8 143.1 96.1Q142.4 96.4 141.3 96.2Q139.7 95.9 139 94.6Q138.3 93.3 138.7 91.3Z M136.3 109.1Q136.5 108.5 137 108.4Q137.5 108.2 138.1 108.5Q138.6 108.8 138.8 109.3Q138.9 109.7 138.6 110.3Q138.3 110.9 137.9 111Q137.4 111.2 136.8 110.9Q136.3 110.6 136.1 110.1Q135.9 109.7 136.3 109.1Z M124 120.8 131.1 127.6 133.6 125 134.9 126.3 128.4 133.1 127.1 131.8 129.5 129.3 122.4 122.4Z M117 127.5 117.1 127.6 120.3 139.3 117.3 141.2 108 133.5 107.9 133.4 109.9 132.1 112.3 134.2 116.1 131.8 115.2 128.7ZM113.7 135.4 117.8 138.8 118.1 138.6 116.6 133.5Z M103.7 135.3 107.6 146.3 103.1 147.8Q101 148.6 99.7 148Q98.5 147.5 97.9 146Q97.4 144.5 98.1 143.2Q98.7 142 100.8 141.3L103.1 140.5L101.6 136ZM103.7 142.1 101.7 142.8Q100.7 143.2 100.2 143.8Q99.8 144.3 100.1 145.2Q100.4 146.1 101.1 146.3Q101.8 146.5 102.8 146.1L104.9 145.4Z M80.8 140 80.7 149.9 84.3 149.9 84.3 151.7 74.9 151.6 74.9 149.8 78.4 149.8 78.5 140Z M70 139.4 67.2 150.7 65 150.1 66.1 145.8 61 144.5 59.9 148.8 57.7 148.3 60.5 137 62.8 137.5 61.5 142.7 66.5 143.9 67.8 138.8Z M55.3 134.8 49.9 145.1 42.9 141.5 43.8 139.9 48.7 142.5 50 140 46.2 138 47 136.5 50.8 138.5 52.4 135.4 47.4 132.7 48.3 131.1Z M38.8 123.8 30.2 131.7 26.9 128.2Q25.9 127.1 25.6 126.1Q25.3 125.2 25.6 124.4Q25.8 123.5 26.5 122.9Q27.3 122.1 28.3 122Q29.3 121.9 30.3 122.6L32.4 117L32.5 117L34.1 118.7L32.1 124L33.5 125.6L37.2 122.1ZM32.3 126.7 30.8 125.1Q30.1 124.3 29.4 124.1Q28.8 124 28.1 124.6Q27.5 125.1 27.6 125.8Q27.7 126.5 28.4 127.2L30 128.9Z M29.9 113 20 119.2 18.7 117.2 28.6 111Z M24.4 102Q25 103.5 24.7 104.8Q24.4 106.2 23.3 107.2Q22.3 108.3 20.6 108.9Q18.9 109.6 17.4 109.5Q15.9 109.4 14.8 108.6Q13.7 107.7 13 106.1Q12.5 104.7 12.6 103.6Q12.7 102.4 13.3 101.5Q14 100.7 15.1 100.1L15.9 102.1Q14.9 102.7 14.6 103.6Q14.2 104.4 14.7 105.5Q15.2 106.9 16.5 107.2Q17.9 107.5 19.7 106.8Q21.7 106 22.5 104.9Q23.2 103.7 22.7 102.3Q22.2 101.1 21.3 100.7Q20.3 100.4 19.1 100.8L20.3 103.9L18.7 104.6L16.7 99.4L22.3 97.2L22.9 98.8L21.6 99.3L21.8 99.6Q22.5 99.7 23.2 100.2Q23.9 100.7 24.4 102Z M21 92 9.4 93.3 9.1 91 13.6 90.5 13 85.3 8.5 85.9 8.2 83.6 19.8 82.2 20.1 84.5 14.9 85.1 15.5 90.3 20.7 89.7Z M20.3 73.8 10.5 72.6 10.1 76.1 8.3 75.9 9.4 66.5 11.3 66.7 10.8 70.3 20.6 71.5Z M26.9 52.6Q26 54.2 24.8 55Q23.6 55.7 22.1 55.6Q20.6 55.5 19 54.7Q17.3 53.8 16.4 52.7Q15.5 51.5 15.4 50.1Q15.3 48.7 16.1 47Q17 45.4 18.2 44.7Q19.4 43.9 20.9 44Q22.4 44.1 24 44.9Q25.6 45.8 26.6 46.9Q27.5 48.1 27.6 49.5Q27.7 50.9 26.9 52.6ZM25.3 51.8Q26 50.4 25.4 49.2Q24.7 48 22.9 47.1Q21.1 46.1 19.7 46.3Q18.4 46.4 17.7 47.8Q16.9 49.3 17.6 50.4Q18.2 51.6 20.1 52.6Q21.9 53.5 23.2 53.3Q24.6 53.2 25.3 51.8Z M32.1 43.6 23.4 35.7 26.1 32.8 36 36.5 36.2 36.2 28.9 29.6 30.3 28.1 39 35.9 36.3 38.9 26.4 35.1 26.1 35.4 33.5 42Z M43.4 32.3 36.8 22.7 43.4 18.3 44.4 19.8 39.8 22.9 41.3 25.2 44.9 22.8 45.8 24.2 42.3 26.6 44.2 29.5 48.9 26.4 50 27.9Z M60.8 19.7Q60.2 19.8 59.8 19.6Q59.3 19.4 59.1 18.8Q58.9 18.2 59.2 17.7Q59.4 17.3 60 17.1Q60.6 16.9 61.1 17.1Q61.5 17.4 61.7 18Q61.9 18.5 61.7 19Q61.4 19.5 60.8 19.7Z" fill="#CDB3AE"/>
+<g id="seal-mark-k18" data-part="seal-mark" transform="translate(32 40) scale(1.5)"><ellipse id="pool-k18" data-part="pool" cx="32" cy="40" rx="28" ry="7" fill="url(#pool-seal-k18)"/>
+<g id="reflection-k18" data-part="reflection" mask="url(#mask-seal-k18)"><g transform="matrix(1 0 0 -1 0 80)"><rect x="12" y="14" width="40" height="25" rx="3" fill="#E9F1F8"/><rect x="17" y="33" width="9" height="2" fill="#2E0B0C"/></g></g>
+<g id="card-k18" data-part="card"><rect id="card-face-k18" data-part="card-face" x="12" y="14" width="40" height="25" rx="3" fill="#E9F1F8"/><rect id="digits-k18" data-part="digits" x="17" y="33" width="9" height="2" fill="#2E0B0C"/></g></g>
+</svg></div>
+    </div>
+  </div>
+</footer>
+<div class="toasts" aria-live="polite" data-toasts></div>
+<script src="/assets/vendor/gsap/gsap.min.js" defer></script>
+<script src="/assets/vendor/gsap/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/gsap/SplitText.min.js" defer></script>
+<script src="/assets/vendor/gsap/Flip.min.js" defer></script>
+<script src="/assets/vendor/lenis/lenis.min.js" defer></script>
+<script src="/assets/js/plans-data.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/blog.js" defer></script>
+</body>
+</html>
