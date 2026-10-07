@@ -20,7 +20,7 @@ function heroSec() {
     <div class="blog-hero-copy">
       <p class="eyebrow">Blog</p>
       <h1 class="h1">Things nobody tells you at the counter.</h1>
-      <p class="dek intro">Short pieces on caps, quarters, fees and the way shops code. Each one takes a fact that lives in your issuer's terms and nowhere in your day, and puts it where you'd need it: in your hand, at the till.</p>
+      <p class="dek intro">Short pieces on caps, quarters, fees and the way shops code. Each one takes a fact that lives in your issuer's terms and nowhere in your day, and puts it where you'd need it: in your hand, at checkout.</p>
     </div>
     <div class="wheel" data-wheel>
       <div class="scene scene--wheel" data-scene="wheel" aria-hidden="true" data-composed></div>

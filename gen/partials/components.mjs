@@ -7,7 +7,8 @@ export const PLANS = JSON.parse(fs.readFileSync(path.join(SITE, 'src', 'data', '
 export const plan = (id) => PLANS.plans[id];
 
 // The one plan card component. Slot order locked: name, price, who line, unit line, inclusions, renewal line, CTA.
-export function planCard(id, { compact = false, dark = false, headingLevel = 3, cls = '', showCta = true, lit = null, idPrefix = '' } = {}) {
+// summary: name, price, who line and CTA only; the inclusions live once, on the Plans page.
+export function planCard(id, { compact = false, dark = false, headingLevel = 3, cls = '', showCta = true, lit = null, idPrefix = '', summary = false } = {}) {
   const p = plan(id);
   const isLit = lit === null ? p.recommended : lit;
   const H = `h${headingLevel}`;
@@ -23,15 +24,15 @@ export function planCard(id, { compact = false, dark = false, headingLevel = 3, 
   ${p.cancelLine ? `<p class="plan-cancel">${esc(p.cancelLine)}</p>` : ''}
   <p class="plan-who">${esc(p.whoLine)}</p>
   <p class="plan-unit">${esc(p.unitLine)}</p>
-  <ul class="plan-list">${p.inclusions.map(i => `<li>${cardMark('bullet')}<span>${esc(i)}</span></li>`).join('')}</ul>
-  <p class="plan-renew">${esc(p.renewalLine)}</p>
+  ${summary ? '' : `<ul class="plan-list">${p.inclusions.map(i => `<li>${cardMark('bullet')}<span>${esc(i)}</span></li>`).join('')}</ul>
+  <p class="plan-renew">${esc(p.renewalLine)}</p>`}
   ${showCta ? `<div class="plan-cta"><a class="${tileCls} tile--full" href="/cart?add=${id}" data-add-plan="${id}">${esc(p.cta)}</a>${priceLine}</div>` : ''}
 </article>`;
 }
 
 // Three plan cards standing on a CSS glass stage with the pool of light (the deck).
-export function planDeck({ compact = false, cls = '', idPrefix = '', headingLevel = 3, pool = 'pass' } = {}) {
-  const cards = PLANS.order.map(id => planCard(id, { compact, headingLevel, idPrefix })).join('');
+export function planDeck({ compact = false, cls = '', idPrefix = '', headingLevel = 3, pool = 'pass', summary = false } = {}) {
+  const cards = PLANS.order.map(id => planCard(id, { compact, headingLevel, idPrefix, summary })).join('');
   return `<div class="deck ${cls}" data-deck data-pool="${pool}">
   <div class="deck-glass" aria-hidden="true"><div class="pool" data-pool-el></div><div class="deck-reflect"></div></div>
   <div class="deck-cards">${cards}</div>
@@ -64,7 +65,7 @@ export function testimonials({ cls = '' } = {}) {
     <span class="mono" aria-hidden="true"><svg class="mono-arc" viewBox="0 0 56 56"><path d="M28 3 a25 25 0 0 1 25 25" fill="none" stroke="#CDB3AE" stroke-width="1.5" stroke-linecap="round"/></svg><span class="mono-txt">${esc(mono)}</span></span>
     <blockquote class="tquote"><p>${esc(quote)}</p></blockquote>
     <p class="twho">${esc(who)}</p></li>`).join('')}</ul>
-  <p class="tstm-label">Each member's own figures, quoted with permission. They're examples of one wallet, not a promise about yours. Rewards are set and paid by your issuer.</p>
+  <p class="tstm-label">Each member's own figures, quoted with permission. Results vary. Rewards are set and paid by your issuer.</p>
 </div>`;
 }
 

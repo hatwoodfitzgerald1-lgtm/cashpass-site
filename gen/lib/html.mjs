@@ -71,7 +71,7 @@ export const SHOTS = {
   's4-cards': 'A phone showing the Cash Pass Cards screen: five plain card tiles with nicknames, rates, last four digits, cap bars and fees, the Grocery 6% tile lit as the recommended one.',
   's5-quarter': 'A phone showing the Cash Pass Quarter screen: Q4 opens Oct 1, the Rotating 5% card, this quarter\'s categories, three quarters already activated, and a Mark activated button.',
   's6-household': 'A phone showing the Cash Pass Household view: $1,506 net after fees across five people, a line per person, and a note that the house sees totals, never transactions.',
-  's7-till': 'A phone showing the Cash Pass Till screen at Lantern Row Cafe: Tap Everyday 4%, because the cafe codes as Dining and the Grocery 6% cap was reached on Oct 14.',
+  's7-till': 'A phone showing the Cash Pass Checkout screen at Lantern Row Cafe: Tap Everyday 4%, because the cafe codes as Dining and the Grocery 6% cap was reached on Oct 14.',
   's8-connect': 'A phone showing the Cash Pass Connect a card screen: Read only, by design, an explanation that Cash Pass receives a token and never a password, and a Connect read only button.',
   'family': 'Three phones standing on black glass under one cool light, showing the Cash Pass Moment, Ledger and Rules screens.'
 };

@@ -36,7 +36,7 @@ export const POSTS = [
       { h2: 'The habit that holds' },
       'Habits that survive are the ones attached to a cue that already exists. The quarter has no cue, so give it one. Three parts.',
       'First, a reminder that arrives before the quarter opens, not after. A message a few days ahead that names the categories does the work of the email you never found. Pass sends that reminder before every quarter, and it keeps nudging while the card sits unactivated.',
-      'Second, a mark. When you\'ve pressed the issuer\'s button, record it. The Quarter screen in Cash Pass has one button, Mark activated, and a line under it that reads like a record: Activated: Q1, Q2, Q3. Until that mark exists, Cash Pass treats the card as earning its base rate and won\'t recommend it for the bonus, so an unactivated card can\'t quietly win a till.',
+      'Second, a mark. When you\'ve pressed the issuer\'s button, record it. The Quarter screen in Cash Pass has one button, Mark activated, and a line under it that reads like a record: Activated: Q1, Q2, Q3. Until that mark exists, Cash Pass treats the card as earning its base rate and won\'t recommend it for the bonus, so an unactivated card can\'t quietly win at checkout.',
       'Third, a bar. $0 of $1,500 this quarter, then $900 of $1,500, then the cap. Watching the number move is what turns a chore into a small game you\'re already winning.',
       { h2: 'What Cash Pass does, and what your issuer does' },
       'The split is exact. Cash Pass reminds, tracks and records. Your issuer activates, sets the categories, sets the cap and pays the reward. Cash Pass has no button that activates anything on your account, because its connection to your cards is read only. It can see the spend. It can\'t touch the card.',
@@ -81,7 +81,7 @@ export const POSTS = [
       'Plenty of people tap the grocery card at the cafe for years. Not from carelessness; from the reasonable belief that a shop inside a supermarket is a supermarket. The wallet doesn\'t correct that belief. It carries every card and has no opinion.',
       { h2: 'Watching the cap instead of remembering it' },
       'You could track a cap by hand. Keep the receipts, add them up, remember the reset date. Nobody does, for the same reason nobody activates every quarter: the information lives in the issuer\'s system and nowhere in your day.',
-      'Cash Pass moves the bar with every transaction it reads. The July notification at the market says $4,140 of the $6,000 yearly cap used, and the number is different next week. When the cap is reached, the answer at the till changes the same day, unless your rule says otherwise. And when the shop inside the shop codes differently, Cash Pass proposes a rule for it, Lantern Row Cafe, Everyday 4%, and waits for you to approve.',
+      'Cash Pass moves the bar with every transaction it reads. The July notification at the market says $4,140 of the $6,000 yearly cap used, and the number is different next week. When the cap is reached, the answer at checkout changes the same day, unless your rule says otherwise. And when the shop inside the shop codes differently, Cash Pass proposes a rule for it, Lantern Row Cafe, Everyday 4%, and waits for you to approve.',
       'The card didn\'t change on October 14. What it earned did, and the cafe was a different shop the whole time. Two small facts, both invisible from the wallet, both deciding which card to tap. Pass watches them for you.'
     ]
   },

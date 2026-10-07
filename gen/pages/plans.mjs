@@ -6,17 +6,17 @@ function heroDeck() {
   return `<section class="hero hero--plans plans-deck-sec" aria-labelledby="plans-h1" data-in="glass-rise">
   <div class="hero-in plans-hero">
     <p class="eyebrow">Plans</p>
-    <h1 class="h1" id="plans-h1">Three plans. One of them has the light on.</h1>
-    <p class="intro">Every plan gives the answer at the till. The paid ones do the remembering: the connection, the caps, the quarters, the fees. The price you see is the whole price.</p>
+    <h1 class="h1" id="plans-h1">Cash Pass plans and prices</h1>
+    <p class="intro">Every plan tells you which of your cards to use at checkout. The paid plans connect your cards and track caps, rotating quarters and annual fees. The price you see is the whole price.</p>
   </div>
-  <div class="third-card" data-third-card>${planDeck({ idPrefix: 'plan', headingLevel: 2 }).replace('data-add-plan="pass">Buy Pass', 'data-add-plan="pass" data-hero-cta>Buy Pass')}</div>
+  <div class="third-card" data-third-card>${planDeck({ idPrefix: 'plan', headingLevel: 2, summary: true }).replace('data-add-plan="pass">Buy Pass', 'data-add-plan="pass" data-hero-cta>Buy Pass')}</div>
   <p class="grid-line">${esc(PLANS.lineUnderGrid)}</p>
 </section>`;
 }
 
 function spec() {
   return `<section class="spec" aria-labelledby="spec-h" data-in="rows-left">
-  <h2 class="vh" id="spec-h">The plans in full</h2>
+  <h2 class="vh" id="spec-h">What each plan includes</h2>
   <div class="split">
     <aside class="split-rail spec-summary" aria-live="polite" data-spec-summary>
       <p class="spec-sum-label">Summary</p>
@@ -30,16 +30,16 @@ function spec() {
   </div>
   <div class="pull" data-pull>
     ${edgeDivider()}
-    <p class="pq pq--h2 pull-h" data-type-on>Pass is the one with the light on. The other two aren't wrong. They're for a different wallet.</p>
+    <p class="pq pq--h2 pull-h" data-type-on>Up to three cards, Free. Four or more, Pass. A household, Pass Family.</p>
     ${edgeDivider()}
   </div>
 </section>`;
 }
 
 const ROWS = [
-  ['How do I cancel?', `Two taps in the app, with no call or chat in between, or one email to ${mailto()}. Cancelling stops the next renewal. Your plan runs to the end of the year you've paid for.`, 's1-moment'],
+  ['How do I cancel?', `Two taps in the app, with no call or chat in between, or one email to ${mailto()}. Cancelling stops the next renewal. Your plan runs to the end of the year you\'ve paid for.`, 's1-moment'],
   ['Is $59 the whole price?', 'Yes. Prices are in US dollars and include any sales tax that applies. Pass renews at $59 a year and Pass Family at $99, at the price you see here, and a renewal notice reaches you before either one.', 's3-ledger'],
-  ['What does the read only connection add over Free?', 'The last twelve months. Free knows the cards you typed in and the rules you wrote. Pass reads your transactions, sorted by merchant and category, and from those it proposes rules, tracks every cap to the dollar and fills the fee ledger. The token can read. It can\'t move money, make a charge or change anything.', 's8-connect'],
+  ['What does the read only connection add over Free?', 'Your last twelve months of transactions. Free only knows the cards you typed in and the rules you wrote. With your history, Pass suggests rules, tracks caps and fills the fee ledger. The connection can read. It can\'t move money or change anything.', 's8-connect'],
   ['Can two people share one Pass?', 'Pass is one person, one login. Pass Family is up to five, each with their own login and their own cards, one rule set and one bill. Nobody in the house sees anyone else\'s transactions, only the totals.', 's6-household']
 ];
 
@@ -58,15 +58,14 @@ function before() {
 }
 
 const FAQ3 = [
-  ['I carry three cards and one of them rotates. Free or Pass?', 'Free gives you the answer at the till for all three. It can\'t remind you before the quarter opens; that reminder is a Pass feature. If you\'ve never missed a quarter, Free. If you have, Pass.'],
+  ['I carry three cards and one of them rotates. Free or Pass?', 'Free picks the card for all three. It can\'t remind you before a quarter opens; that\'s a Pass feature. If you\'ve never missed a quarter, Free. If you have, Pass.'],
   ['Do I type my cards in on Pass?', 'No. They arrive with the connection, with the last four digits so you can tell them apart. You can still add one by hand, the way Free does.'],
-  ['Which plan does the quiz recommend?', 'Whichever fits your answers. One to three cards lands on Free, four or more on Pass, a household on Pass Family. It never lands on a card you don\'t own.']
 ];
 
 function three() {
   return `<section class="three" aria-labelledby="three-h" data-in="flip-cards">
   <div class="three-grid">
-    <div class="three-faq"><h2 class="h2" id="three-h">Three more, quickly</h2>${faqIndex(FAQ3, { firstOpen: false, idPrefix: 'plans-faq' })}</div>
+    <div class="three-faq"><h2 class="h2" id="three-h">More plan questions</h2>${faqIndex(FAQ3, { firstOpen: false, idPrefix: 'plans-faq' })}</div>
     <div class="three-t">${testimonials({ cls: 'tstm--plans' })}</div>
   </div>
 </section>`;

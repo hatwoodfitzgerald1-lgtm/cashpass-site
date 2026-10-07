@@ -15,12 +15,12 @@
       "priceSuffix": "",
       "amountDisplay": "$0.00",
       "cadence": "never bills",
-      "whoLine": "Free is the front door.",
+      "whoLine": "For trying it with up to three cards.",
       "unitLine": "1 person, up to 3 cards",
       "underPrice": "Never bills. Nothing to cancel.",
       "cancelLine": "",
       "inclusions": [
-        "The answer at the till: which of your cards to tap, then why, in one line",
+        "At checkout: which of your cards to use, and why, in one line",
         "Up to 3 cards, entered by hand from the category reference, no bank connection",
         "Unlimited manual rules: a shop, a chain or a category assigned to a card, and a rule always wins",
         "Wallet deep links: one tap opens the right card in your phone's wallet",
@@ -37,7 +37,7 @@
       "payBusy": "Completing your order",
       "toastAdded": "Free is in your cart. $0, never bills.",
       "confirmHeadline": "Free is yours.",
-      "leadParagraph": "Free is the front door. Add up to 3 of your cards by hand, write a rule for the shops you visit, and Cash Pass names the card to tap when you get there, with the reason in one line. No bank connection, no card on file, nothing to cancel."
+      "leadParagraph": "Add up to three cards by hand and write rules for the stores you use. Cash Pass names the card at checkout. No bank connection and nothing to cancel."
     },
     "pass": {
       "id": "pass",
@@ -50,7 +50,7 @@
       "priceSuffix": "a year",
       "amountDisplay": "$59.00",
       "cadence": "a year",
-      "whoLine": "Pass is for the wallet with four cards or more.",
+      "whoLine": "For people who carry four cards or more.",
       "unitLine": "1 person, unlimited cards",
       "underPrice": "Renews at $59 a year",
       "cancelLine": "Cancel in two taps, any time. Your plan runs to the end of the paid year.",
@@ -74,7 +74,7 @@
       "payBusy": "Processing your payment",
       "toastAdded": "Pass is in your cart. $59 a year, tax included.",
       "confirmHeadline": "Pass is yours.",
-      "leadParagraph": "Pass is for the wallet with four cards or more. Connect your cards read only and the last twelve months sort by merchant, so Pass proposes your rules, tracks every cap to the dollar and reminds you before each rotating quarter opens. The ledger then nets your annual fees off what each card earned, so the number you see at the end of the year is the real one."
+      "leadParagraph": "For four cards or more. Connect your cards read only and Pass suggests rules from your history, tracks every cap and reminds you before each rotating quarter. The ledger subtracts each annual fee from what that card earned."
     },
     "family": {
       "id": "family",
@@ -87,13 +87,13 @@
       "priceSuffix": "a year",
       "amountDisplay": "$99.00",
       "cadence": "a year",
-      "whoLine": "Pass Family puts one rule set in five pockets.",
+      "whoLine": "For a household of up to five people.",
       "unitLine": "Up to 5 people, unlimited cards each",
       "underPrice": "Renews at $99 a year",
       "cancelLine": "Cancel in two taps, any time. Your plan runs to the end of the paid year.",
       "inclusions": [
         "Everything in Pass, for up to 5 people, each with their own login and their own cards",
-        "One shared rule set: a rule written once applies at every till in the house",
+        "One shared rule set: a rule written once applies to everyone in the house",
         "Household earnings view: one total for the year, fees netted off",
         "Per person breakdown: who earned what, on which card",
         "Card details stay with the person who holds the card; the household sees totals, never transactions",
@@ -104,12 +104,12 @@
       "cta": "Buy Pass Family",
       "ctaStyle": "ghost",
       "stickySummary": "Pass Family. $99 a year. Renews at $99 a year. Cancel in two taps, any time.",
-      "quizLine": "Pass Family. One rule set in five pockets.",
+      "quizLine": "Pass Family. One set of rules for up to five people.",
       "payButton": "Pay $99.00 now",
       "payBusy": "Processing your payment",
       "toastAdded": "Pass Family is in your cart. $99 a year, tax included.",
       "confirmHeadline": "Pass Family is yours.",
-      "leadParagraph": "Pass Family puts one rule set in five pockets. Up to five people, each with their own cards and their own login, get the same answer at the same shops, and the household view adds it all up with fees taken off and a line per person. Card details stay with the person who holds the card; the house sees totals, not transactions."
+      "leadParagraph": "Up to five people, each with their own login and cards, share one set of rules. The household view shows the year's total after fees, with a line per person, and never anyone's transactions."
     }
   }
 }

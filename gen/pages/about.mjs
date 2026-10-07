@@ -10,14 +10,14 @@ ${[0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const y = 60 + i * 58; return `<path d="
 function manifesto() {
   return `<section class="manifesto" data-in="manifesto">
   <p class="eyebrow">About</p>
-  <h1 class="h1 manifesto-h" data-manifesto>Your wallet carries every card. It has never once chosen.</h1>
+  <h1 class="h1 manifesto-h" data-manifesto>About Cash Pass, the app that picks which of your cards to use</h1>
 </section>`;
 }
 
 const STORY = [
   'Cash Pass began at a supermarket checkout in Denver in 2026. Five cards on the phone, one of them earning 6 percent at that exact shop, and no memory of which. The default card came up. It earned 1 percent. The phone had known every card for years and had never once picked one.',
   'That\'s the gap this company exists to close. A phone\'s wallet is a good container. It holds every card, it\'s quicker than leather, and it will never, on its own, tell you which one to use. The apps that did offer an answer paid for themselves by recommending new cards, so their answer was another card. We wanted the opposite: a picker that works from the wallet you already have, paid by the person using it, once a year, and by nobody else.',
-  'So we built a card picker for the phone you already carry. It reads the cards you own, the rules you write, the rotating categories you\'d otherwise forget to activate, and the caps and fees nobody tracks. At the till it hands your wallet one card with the reason in one line. The rest of the app is settings, and settings live behind the answer. That\'s the one belief here: the answer belongs at the counter, not in a spreadsheet, and it should be short enough to read while the reader beeps.'
+  'So we built an app that picks from the cards you already own. It reads your cards, the rules you write, the rotating categories you\'d otherwise forget to activate, and the caps and fees nobody tracks. At checkout it names one card with the reason in one line. We think that answer belongs at the counter, not in a spreadsheet, and it should be short enough to read while the card reader beeps.'
 ];
 
 function story() {
@@ -33,7 +33,7 @@ function story() {
   ];
   return `<section class="about-story" aria-label="The story" data-in="pool-spread">
   ${STORY.map((p, i) => `<div class="story-spread${i % 2 ? ' story-spread--flip' : ''}" data-spread>
-    <div class="story-text"><h2 class="vh">Part ${i + 1}</h2><p class="story-p">${esc(p)}</p></div>
+    <div class="story-text"><h2 class="vh">${['How it started', 'The problem we set out to fix', 'What we built'][i]}</h2><p class="story-p">${esc(p)}</p></div>
     <figure class="story-media" data-story-media>${media[i]}</figure>
   </div>`).join('')}
 </section>`;
@@ -49,7 +49,7 @@ function never() {
   return `<section class="about-never" aria-labelledby="never-h" data-in="fill-numerals">
   <div class="sec-head"><h2 class="h2" id="never-h">What Cash Pass will never do</h2></div>
   <ol class="never-grid">${items.map(([n, t, ic]) => `<li class="idx-item never-cell" data-idx>${numeral(n)}<div class="idx-body">${icon(ic, 'dec-ic')}<p>${esc(t)}</p></div></li>`).join('')}</ol>
-  <p class="never-close">These aren't policies we'll revisit. They're the shape of the product. Take any one away and the answer at the till stops being yours.</p>
+  <p class="never-close">These aren't policies we'll revisit. They're the shape of the product. Take any one away and the answer stops being about your wallet.</p>
 </section>`;
 }
 
@@ -57,8 +57,8 @@ function who() {
   return `<section class="who" aria-labelledby="who-h" data-in="fade-five">
   ${fiveDivider('who-div')}
   <div class="split">
-    <h2 class="h2 split-rail" id="who-h">Who's here</h2>
-    <p class="who-p two-col-2560">We're small. A founder who stood at that checkout and tapped the wrong card. Two engineers, one on the read only connection and the rules engine, one on the app itself. A designer who built every screen in the app's own type, so the phone in the pictures on this site is the phone in your pocket. And a support lead who reads every message sent to <a href="mailto:${EMAIL}">${EMAIL}</a> and answers within two business days. The names can wait until there are more of us than the office holds. The product speaks in one voice, and it isn't any of ours.</p>
+    <h2 class="h2 split-rail" id="who-h">Who we are</h2>
+    <p class="who-p two-col-2560">We're small. A founder who stood at that checkout and tapped the wrong card. Two engineers, one on the read only connection and the rules engine, one on the app itself. A designer who built every screen in the app's own type, so the phone in the pictures on this site is the phone in your pocket. And a support lead who reads every message sent to <a href="mailto:${EMAIL}">${EMAIL}</a> and answers within two business days.</p>
   </div>
 </section>`;
 }
@@ -87,10 +87,10 @@ function pull() {
 
 export function render() {
   const main = [manifesto(), story(), never(), who(), where(), pull(),
-    closeBand({ body: 'We built the usher. The wallet is yours. Pass connects every card read only and does the remembering for $59 a year.', secondary: ['Compare plans', '/plans'] })].join('\n');
+    closeBand({ body: 'Pass connects every card read only and tracks caps, quarters and fees for $59 a year.', secondary: ['Compare plans', '/plans'] })].join('\n');
   return page({
     route: '/about', title: 'About Cash Pass',
-    description: 'Cash Pass began at a Denver checkout in 2026. A card picker for the phone you already carry, paid by you once a year, with no card offers, no referrals, no lending and no credit scores.',
+    description: 'Cash Pass began at a Denver checkout in 2026. An app that picks which of your own credit cards to use, paid by you once a year, with no card offers, no referrals, no lending and no credit scores.',
     bodyClass: 'page-about', hover: 'weight', main, script: 'about', navCta: 'rimmed'
   });
 }
