@@ -24,7 +24,7 @@ export function render() {
           </article>
           <div class="slot-glass" aria-hidden="true"><div class="pool" data-slot-pool></div><div class="glass-reflect"></div></div>
         </div>
-        <figure class="slot-ref">${productShot('s4-cards', { alt: SHOTS['s4-cards'], width: 300 })}<figcaption class="caption">The Cards. Your wallet, with a cap bar on every card that has one. Example figures.</figcaption></figure>
+        <figure class="slot-ref">${productShot('s4-cards', { alt: SHOTS['s4-cards'], width: 300 })}<figcaption class="caption">The Cards. Your cards, with progress toward each cap. Example figures.</figcaption></figure>
       </div>
       <aside class="summary" aria-labelledby="sum-h" data-summary>
         <h2 class="h3" id="sum-h">Summary</h2>

@@ -19,7 +19,7 @@ function tool() {
   <div class="hero-in">
     <p class="eyebrow">Find your plan</p>
     <h1 class="h1" id="quiz-h1">Three questions, one light.</h1>
-    <p class="intro">Answer three things about your wallet. The light walks to the plan that fits, and you'll see the till line you'd actually get.</p>
+    <p class="intro">Answer three things about your wallet. The light walks to the plan that fits, and you'll see the answer you'd actually get at checkout.</p>
   </div>
   <div class="tool-grid">
     <form class="quiz" data-quiz novalidate aria-describedby="quiz-progress">
@@ -53,9 +53,9 @@ function result() {
       <div class="result-body" data-result-body hidden>
         <h2 class="answer answer--result" id="result-h" tabindex="-1" data-result-line aria-label=""><span class="answer-txt" aria-hidden="true"></span></h2>
         ${edgeDivider('result-edge')}
-        <p class="result-till-label">The till line you'd get</p>
+        <p class="result-till-label">What you'd see at checkout</p>
         <p class="result-till" data-result-till></p>
-        <p class="result-how-label">How it decided</p>
+        <p class="result-how-label">Why this plan</p>
         <ol class="result-reasons" data-result-reasons></ol>
         <p class="result-lower" data-result-lower hidden>If you would like the quarterly reminders, Pass adds them for $59 a year.</p>
       </div>
@@ -76,7 +76,7 @@ export function render() {
   ].join('\n');
   return page({
     route: '/quiz', title: 'Find your plan',
-    description: 'Three questions about your wallet. The light lands on the plan that fits, with the till line you\'d actually get.',
+    description: 'Three questions about your wallet. The light lands on the plan that fits, with the answer you\'d actually see at checkout.',
     bodyClass: 'page-quiz', hover: 'brighten', main, script: 'quiz', navCta: 'rimmed'
   });
 }

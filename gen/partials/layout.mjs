@@ -52,7 +52,7 @@ export function head({ title, description, path: route, ogType = 'website', cano
 <meta property="og:image" content="${ORIGIN}/assets/media/og-share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cash Pass: which card to tap, told to you at the till, in one line. A phone's cool light on black glass over dark red leather.">
+<meta property="og:image:alt" content="Cash Pass: an app that tells you which of your credit cards to use. A phone's cool light on black glass over dark red leather.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${attr(title)}">
 <meta name="twitter:description" content="${attr(description)}">

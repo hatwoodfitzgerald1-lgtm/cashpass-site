@@ -14,8 +14,8 @@ function heroSec() {
   </div>
   <div class="hero-in">
     <p class="eyebrow">How it works</p>
-    <h1 class="h1">${words('Four things weighed. One answer at the till.')}</h1>
-    <p class="intro">Cash Pass doesn't guess and it doesn't ask you to remember. It reads, it weighs, and it hands one card to your phone's wallet as you arrive.</p>
+    <h1 class="h1">${words('How Cash Pass picks which card to use')}</h1>
+    <p class="intro">Cash Pass looks at your transactions, your rules, rotating categories, caps and annual fees. Then it names one of your cards, with the reason, as you arrive at a store.</p>
     <div class="cta-row"><a class="tile" href="/cart?add=pass" data-add-plan="pass" data-hero-cta>Buy Pass</a><span class="price-line">$59 a year. Cancel any time.</span></div>
   </div>
 </section>`;
@@ -26,10 +26,10 @@ function timeline() {
     ['1', 'Connect, read only', 'You sign in on your bank\'s own page. Cash Pass gets a token that can read and can\'t touch.', 'token'],
     ['2', 'Your year sorts itself', 'Twelve months of transactions land sorted by merchant and by category. Nothing to enter.', 'ledger'],
     ['3', 'Rules are proposed', 'Where your history is clear, Cash Pass proposes a rule. You approve each one, or ignore it.', 'rule'],
-    ['4', 'The answer, at the till', 'At the door, a notification names the card and the reason. One tap opens it in your wallet.', 'phone']
+    ['4', 'The answer at checkout', 'At the door, a notification names the card and the reason. One tap opens it in your wallet.', 'phone']
   ];
   return `<section class="timeline" aria-labelledby="tl-h" data-in="timeline-draw">
-  <h2 class="h2 tl-h" id="tl-h">${words('Connect once. The rest happens before you reach the counter.')}</h2>
+  <h2 class="h2 tl-h" id="tl-h">${words('Four steps from signup to your first answer')}</h2>
   <div class="tl-track" aria-hidden="true"><svg class="tl-line" viewBox="0 0 1000 2" preserveAspectRatio="none"><path d="M0 1 H1000" stroke="#E9F1F8" stroke-opacity=".6" stroke-width="1.5" data-tl-line/></svg></div>
   <ol class="tl-steps">${steps.map(([n, h, p, ic]) => `<li class="tl-step" data-tl-step data-screen="${ic}">
     <span class="tl-dot" aria-hidden="true">${cardMark('tl-mark')}</span>
@@ -43,13 +43,13 @@ function timeline() {
 
 function fourThings() {
   const items = [
-    ['01', 'Your history', 'Every decision starts with what actually happened. With your cards connected read only, the last twelve months of transactions arrive sorted by merchant and by category, and Cash Pass keeps sorting as new ones land. From that it learns your shops (Lantern Row Market, Route 9 Fuel, the marketplace), the category each one codes under, and which card you\'ve been reaching for. It learns your habits well enough to notice the cafe that codes as Dining inside the supermarket that codes as Grocery. Free skips this step. Its three cards are entered by hand, and it decides from the published category terms alone.', 'ledger'],
-    ['02', 'Your rules', 'A rule is a sentence: this shop, this chain or this category, this card. Write as many as you like on any plan. On Pass, Cash Pass reads your history and proposes rules where the pattern is clear, and each proposal sits on the Rules screen with Approve and Ignore until you decide. Nothing takes effect on its own. A rule wins over everything else, including a cap, because a rule is you speaking. Change or delete one whenever you like. On Pass Family, a rule written by one person is live in every pocket in the house.', 'rule'],
-    ['03', 'Rotating categories', 'A rotating card earns its 5 percent in categories the issuer changes every quarter, on up to $1,500 of spend a quarter, and only after you\'ve activated that quarter. Cash Pass holds the calendar. Before a quarter opens it tells you, names the categories, and asks you to activate in your issuer\'s app and mark it done here. Until you do, it treats the card as earning its base rate and won\'t recommend it for the bonus. In the example year all four quarters were activated: $3,600 of spend across them at 5 percent, $180 earned. Example figures.', 'quarter'],
-    ['04', 'Caps and fees', 'Two numbers a wallet never shows you. The first is where you stand against each cap: $4,140 of the $6,000 yearly cap on Grocery 6% in July, $900 of $1,500 for the quarter on Rotating 5%. Cash Pass moves those bars with every transaction, so when a cap is reached, as Grocery 6% reached its cap on Oct 14 in the example year, the answer at the till changes the same day. The second is the fee. Each card\'s annual fee comes off what that card earned, card by card, so the Ledger\'s number is the real one: $1,069 earned, $320 in fees, $749 net. Example figures.', 'cap']
+    ['01', 'Your history', 'With your cards connected read only, your last twelve months of transactions arrive sorted by store and category, and new ones are sorted as they come in. From that, Cash Pass learns where you shop, the category each store codes under, and which card you\'ve been using. It can spot a cafe that codes as Dining inside a supermarket that codes as Grocery. Free skips this step: its three cards are entered by hand, and it decides from the published category terms alone.', 'ledger'],
+    ['02', 'Your rules', 'A rule pairs a store, a chain or a category with a card. Write as many as you like on any plan. On Pass, Cash Pass reads your history and proposes rules where the pattern is clear, and each proposal sits on the Rules screen with Approve and Ignore until you decide. Nothing takes effect on its own. A rule wins over everything else, including a cap. Change or delete one whenever you like. On Pass Family, a rule one person writes applies to the whole house.', 'rule'],
+    ['03', 'Rotating categories', 'A rotating card earns its 5 percent in categories the issuer changes every quarter, on up to $1,500 of spend a quarter, and only after you\'ve activated that quarter. Cash Pass tracks the calendar. Before a quarter opens it tells you, names the categories, and asks you to activate in your issuer\'s app and mark it done here. Until you do, it treats the card as earning its base rate and won\'t recommend it for the bonus. In the example year all four quarters were activated: $3,600 of spend across them at 5 percent, $180 earned. Example figures.', 'quarter'],
+    ['04', 'Caps and fees', 'Two numbers your wallet never shows you. The first is where you stand against each cap: $4,140 of the $6,000 yearly cap on Grocery 6% in July, $900 of $1,500 for the quarter on Rotating 5%. Cash Pass moves those bars with every transaction, so when a cap is reached, as Grocery 6% reached its cap on Oct 14 in the example year, the answer at checkout changes the same day. The second is the fee. Each card\'s annual fee comes off what that card earned, card by card, so the Ledger\'s number is the real one: $1,069 earned, $320 in fees, $749 net. Example figures.', 'cap']
   ];
   return `<section class="four" aria-labelledby="four-h" data-in="numerals-fill">
-  <div class="sec-head"><h2 class="h2" id="four-h">${words('The four things weighed')}</h2></div>
+  <div class="sec-head"><h2 class="h2" id="four-h">${words('The four things it checks')}</h2></div>
   <ol class="four-list">${items.map(([n, h, p, ic]) => `<li class="idx-item four-item" data-idx>
     ${numeral(n)}
     <div class="idx-body">${icon(ic, 'dec-ic')}<h3 class="h3"><span class="vh">${esc(n)} </span>${esc(h)}</h3><p>${esc(p)}</p></div>
@@ -62,10 +62,10 @@ function connection() {
   const chapters = [
     ['Your bank\'s page, not ours', 'You sign in where you always do. Cash Pass never sees the password and never asks for it.'],
     ['A token that reads', 'What comes back is a token. It reads four things about each transaction: the merchant, the amount, the date and the category. It has no way to move money, make a charge or change anything on your accounts, and the third party aggregator that carries it is granted the same read only scope.'],
-    ['Disconnect from the same screen', 'Pull the token and the reading stops, that minute. Nothing about disconnecting takes more steps than connecting did.']
+    ['Disconnect from the same screen', 'Disconnect and the reading stops right away. It takes no more steps than connecting did.']
   ];
   return `<section class="conn" aria-labelledby="conn-h" data-in="rail-cross">
-  <div class="sec-head"><h2 class="h2" id="conn-h">${words('Connect a card. Read only.')}</h2></div>
+  <div class="sec-head"><h2 class="h2" id="conn-h">${words('How the read only connection works')}</h2></div>
   <div class="conn-grid">
     <div class="conn-chapters">${chapters.map(([h, p], i) => `<div class="conn-ch" data-conn-ch="${i}"><h3 class="h3">${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}
       <p class="conn-wallet">When the answer arrives, Open in wallet opens that card in Apple Wallet or Google Wallet, whichever your phone runs. Cash Pass doesn't replace your wallet. It tells it which card.</p>
@@ -100,7 +100,7 @@ function never() {
   <ul class="never-list">${items.map((t) => `<li class="never-item" data-never>${cardMark('never-mark')}<span>${esc(t)}</span></li>`).join('')}</ul>
   <div class="pull" data-pull>
     ${edgeDivider()}
-    <p class="pq pq--h2 pull-h">The wallet already carries every card. Cash Pass is the part that chooses.</p>
+    <p class="pq pq--h2 pull-h">Your wallet holds every card. Cash Pass picks which one to use.</p>
     ${edgeDivider()}
   </div>
 </section>`;
@@ -115,7 +115,7 @@ function saturday() {
     ['8:10', 'the online marketplace, from the sofa', 'Tap Marketplace 5%', '5% here. The card that\'s for this one shop.']
   ];
   return `<section class="sat" aria-labelledby="sat-h" data-in="deck-alternate">
-  <div class="sec-head"><h2 class="h2" id="sat-h">${words('One Saturday in July')}</h2><p class="intro">The same wallet, five stops, one day from the example year.</p></div>
+  <div class="sec-head"><h2 class="h2" id="sat-h">${words('An example day: five stores, five answers')}</h2><p class="intro">The same wallet, five stops, one day from the example year.</p></div>
   <div class="sat-deck">
     <div class="sat-glass" aria-hidden="true"><div class="glass-reflect"></div></div>
     <ol class="sat-cards">${stops.map(([t, shop, a, why], i) => `<li class="till" data-till style="--i:${i}">
@@ -125,17 +125,17 @@ function saturday() {
       <span class="till-ic" aria-hidden="true">${icon('reader')}</span>
     </li>`).join('')}</ol>
   </div>
-  <p class="sat-out">What sat out: Rotating 5% didn't come up. None of these shops is in this quarter's categories, and its bar reads $900 of $1,500 for the quarter. On Monday, Cash Pass proposes a rule from the week's history: Lantern Row Cafe, Everyday 4%, codes as Dining. Approve it once and the cafe never needs weighing again.</p>
+  <p class="sat-out">What sat out: Rotating 5% didn't come up. None of these shops is in this quarter's categories, and its bar reads $900 of $1,500 for the quarter. On Monday, Cash Pass proposes a rule from the week's history: Lantern Row Cafe, Everyday 4%, codes as Dining. Approve it once and the cafe is settled.</p>
   <p class="example">Example figures. Rewards are set and paid by your issuer.</p>
 </section>`;
 }
 
 export function render() {
   const main = [heroSec(), timeline(), fourThings(), connection(), cannot(), never(), saturday(),
-    closeBand({ body: 'You\'ve seen the four things weighed. The fifth is your own wallet, and Pass connects it read only for $59 a year.', secondary: ['Compare plans', '/plans'] })].join('\n');
+    closeBand({ body: 'Pass connects all your cards read only and does this for every purchase, for $59 a year.', secondary: ['Compare plans', '/plans'] })].join('\n');
   return page({
     route: '/how-it-works', title: 'How Cash Pass works',
-    description: 'Four things weighed, one answer at the till. Your history, your rules, rotating categories, caps and fees, and a read only connection that can\'t move money.',
+    description: 'How Cash Pass picks which credit card to use. It checks Your history, your rules, rotating categories, caps and fees, and a read only connection that can\'t move money.',
     bodyClass: 'page-hiw', hover: 'token', main, script: 'hiw'
   });
 }

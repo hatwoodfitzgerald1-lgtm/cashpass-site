@@ -29,9 +29,9 @@
   // Q3: 0 Every quarter, 1 Sometimes, 2 I forget, 3 I don't have one. Sometimes and I forget share one reason set.
   const REASONS = {
     free: {
-      forget: ['One to three cards. Enter them by hand, write your rules, and the answer at the till costs nothing.', 'No connection to a bank and no card on file. Free stays free.'],
-      every: ['One to three cards, and you activate every quarter on your own. Free gives the answer at the till and stays out of the way.', 'No connection to a bank and no card on file. Free stays free.'],
-      none: ['One to three cards and no rotating card. Enter them by hand, write your rules, and the answer at the till costs nothing.', 'No connection to a bank and no card on file. Free stays free.']
+      forget: ['One to three cards. Enter them by hand, write your rules, and the answer at checkout costs nothing.', 'No connection to a bank and no card on file. Free stays free.'],
+      every: ['One to three cards, and you activate every quarter on your own. Free picks the card at checkout and stays out of the way.', 'No connection to a bank and no card on file. Free stays free.'],
+      none: ['One to three cards and no rotating card. Enter them by hand, write your rules, and the answer at checkout costs nothing.', 'No connection to a bank and no card on file. Free stays free.']
     },
     pass: {
       forget: ['Four cards or more, and you\'d rather not remember the quarters. Pass reminds you before each one opens and nudges while a card sits unactivated.', 'Unlimited cards, connected read only. Your last twelve months sort by merchant, and Pass proposes your rules.', 'Every cap tracked to the dollar, every annual fee taken off in the Ledger.'],
@@ -39,7 +39,7 @@
       none: ['Four cards or more. Pass connects all of them read only, sorts your last twelve months by merchant, and proposes your rules.', 'Every cap tracked to the dollar, every annual fee taken off in the Ledger.']
     },
     family: {
-      forget: ['Two wallets or more under one roof, and the quarters get forgotten. The reminder goes to every phone in the house.', 'One rule set in up to five pockets. Written once, live at every till in the house.', 'Each person keeps their own cards and login. The house sees totals, never transactions.'],
+      forget: ['Two wallets or more under one roof, and the quarters get forgotten. The reminder goes to every phone in the house.', 'One rule set for up to five people. Written once, it applies to the whole house.', 'Each person keeps their own cards and login. The house sees totals, never transactions.'],
       every: ['Two wallets or more under one roof. One rule set in up to five pockets, one bill.', 'Every cap and every fee tracked for each person, and one household total with fees taken off.', 'Each person keeps their own cards and login. The house sees totals, never transactions.'],
       none: ['Two wallets or more under one roof. One rule set in up to five pockets, one bill.', 'Each person keeps their own cards and login. The house sees totals, never transactions.']
     }
